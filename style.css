@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0;
+}
+
+/*utility classes  */
+
+section .container-fluid {
+  padding: 0 3rem;
+}
+
+.wander-headingStyle {
+  font-size: 3.2rem;
+  color: #252525;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  letter-spacing: -2px;
+}
+
+.wander-paraStyle {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.5);
+  width: 90%;
+}
+
+.orangeText {
+  color: #ff9500;
+}
+
+.searchInputStyle {
+  padding-left: 60px;
+  padding-bottom: 10px;
+  height: 60px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  &::placeholder {
+    font-size: 0.8rem;
+    color: #7d7d7d;
+  }
+}
+
+.search-input-destination-icon {
+  top: 16px;
+  left: 24px;
+  width: 14px;
+}
+
+.search-input-search-icon {
+  top: 10px;
+  right: 16px;
+  background: #ff9500;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-input-search-icon img {
+  width: 16px;
+}
+
+.wander-btn-fill {
+  background: #fff;
+  padding: 1rem 1.5rem;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 26px;
+}
+
+/* hero section */
+
+.wander-hero-section {
+  background: url("imgs/Screenshot\ 2024-06-20\ 170144.png ");
+  background-repeat: no-repeat;
+  background-position: bottom 0 right 0;
+  background-size: contain;
+  height: 100vh;
+  padding-top: 12rem;
+}
+
+.wander-hero-section .wander-destination {
+  display: inline-block;
+  font-size: 12px;
+  border: 1px solid #666666;
+  border-radius: 16px;
+  padding: 8px 16px;
+  color: #666666;
+  white-space: nowrap;
+  transition: all 0.2s;
+  &:hover {
+    cursor: pointer;
+    border: 1px solid #ff9500;
+    color: #fff;
+    background: #ff9500;
+  }
+}
+
+.wander-hero-section .wander-popular-destinations {
+  display: flex;
+  flex-wrap: wrap;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.wander-hero-section .destinationHeading {
+  font-size: 14px;
+  color: #7d7d7d;
+}
+
+.wander-hero-section .wander-specification-card {
+  background: #f2f2f2;
+  border-radius: 16px;
+  margin-bottom: 1rem;
+}
+
+.wander-hero-section .wander-specification-card p {
+  font-size: 10px;
+}
+
+/* partner logo section */
+
+.wander-partner-section {
+  padding: 6rem 0;
+}
+
+.wander-scroller__inner {
+  padding-block: 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2.5rem;
+}
+
+.wander-partner-scroller[data-animated="true"] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.wander-partner-scroller[data-animated="true"] .wander-scroller__inner {
+  width: max-content;
+  flex-wrap: wrap;
+  animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear
+    infinite;
+}
+
+.wander-partner-scroller[data-direction="right"] {
+  --_animation-direction: reverse;
+}
+
+.wander-partner-scroller[data-direction="left"] {
+  --_animation-direction: forwards;
+}
+
+.wander-partner-scroller[data-speed="fast"] {
+  --_animation-duration: 20s;
+}
+
+.wander-partner-scroller[data-speed="slow"] {
+  --_animation-duration: 40s;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+/* wander-why-section */
+
+.wander-why-section .wander-why-grad-bg {
+  background-image: radial-gradient(
+    circle at top,
+    #ffd98070 0%,
+    #ffb30077 34%,
+    #daf6f490 61%,
+    #7fdbd374 92%
+  );
+  border-radius: 40px;
+}
+
+.wander-why-section .wander-why-grad-bg .wander-why-content {
+  padding: 8em 2rem 2rem 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.wander-why-section .wander-why-card-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 2rem;
+  overflow: hidden;
+  height: 90vh;
+  padding: 1rem;
+}
+
+.wander-why-section .wander-why-img {
+  width: 60%;
+}
+
+.wander-why-section .wander-why-card {
+  background: #fff;
+  padding: 2rem 3rem;
+  max-width: 450px;
+  border-radius: 20px;
+}
+
+/* media queries */
+
+.wander-partner-section .wander-partner-logo {
+  height: 30px;
+}
+
+@media (max-width: 575.98px) {
+  html {
+    font-size: 80%;
+  }
+  .wander-hero-section {
+    /* background-size: cover; */
+    background-position: center;
+    background: url("imgs/Screenshot\ 2024-06-20\ 170144.png"),
+      linear-gradient(#2ec4b6 0%, #cbf3f0 42%, #ffb300 71%, #ffd980 100%), no-repeat right top;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .wander-hero-section .wander-popular-destinations {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    width: 94vw;
+  }
+
+  section .container-fluid {
+    padding: 0 2rem;
+  }
+
+  /* wander-why-section */
+
+  .wander-why-section .container-fluid {
+    padding: 0 1rem;
+  }
+
+  .wander-why-section .wander-why-grad-bg {
+    border-radius: 16px;
+  }
+
+  .wander-why-section .wander-why-card-box {
+    height: 100%;
+    padding: 1.5rem;
+  }
+
+  .wander-why-section .wander-why-grad-bg .wander-why-content {
+    padding: 2rem 3rem;
+    text-align: center;
+  }
+}
