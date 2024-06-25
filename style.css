@@ -405,6 +405,60 @@ section .container-fluid {
   font-family: "Manrope", sans-serif;
 }
 
+.stack-div {
+  position: relative;
+  overflow: hidden;
+  border-radius: 40px;
+  padding: 4rem 14rem 0 14rem;
+}
+
+.wander-stack-1 {
+  background: linear-gradient(45deg, #e9b334 0%, #cbf3f0 56%, #c8fcf7 100%);
+}
+
+.wander-stack-2 {
+  background: linear-gradient(#e9b334 0%, #cbf3f0 56%, #c8fcf7 100%);
+}
+
+.wander-stack-3 {
+  background: radial-gradient(#f4c14a 5%, #ffd000 55%, #e5f9f8 100%);
+}
+
+.wander-stack-button-box {
+  margin-top: 8rem;
+}
+
+.stack-img-absolute {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+}
+
+.stack-img-main img {
+  width: 65%;
+  margin-top: 4rem;
+}
+
+.stack-animation-count {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: end;
+}
+
+.stack-heading {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+  letter-spacing: -1px;
+}
+
+.stack-count {
+  margin-bottom: 1rem;
+}
+
 /* media queries */
 
 @media (max-width: 575.98px) {
@@ -490,5 +544,29 @@ section .container-fluid {
   .slick-dots {
     left: 38%;
     bottom: -16px;
+  }
+  /* stack section */
+  .stack-animation-count {
+    display: none;
+  }
+  .stack-left-content {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .stack-div {
+    padding: 3rem 4rem 0 4rem;
+  }
+
+  .stack-img-absolute {
+    display: none;
+  }
+
+  .stack-img-main img {
+    width: 65%;
+    margin-top: 1rem;
+  }
+
+  .stack-heading {
+    font-size: 22px;
   }
 }

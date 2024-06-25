@@ -35,6 +35,15 @@ $(document).ready(function () {
     prevArrow: ".wander-prev",
     responsive: [
       {
+        breakpoint: 1300,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
@@ -61,3 +70,44 @@ $(document).ready(function () {
     ],
   });
 });
+
+// let mm = gsap.matchMedia();
+
+// mm.add("(min-width:1024px)", () => {
+//   ScrollTrigger.create({
+//     trigger: ".wander-stack-section",
+//     start: "top top",
+//     end: "bottom top",
+//     pin: ".stack-left-pin",
+//     markers: true,
+//     scurb: true,
+//   });
+
+//   const stacks = gsap.utils.toArray(".stack-div");
+
+//   stacks.forEach((stack, index) => {
+//     const tween = gsap.to(stack, {
+//       scrollTrigger: {
+//         trigger: stack,
+//         start: () => `top bottom-=100`,
+//         end: () => `top top+=40`,
+//         scurb: true,
+//         markers: true,
+//         invalidateOnRefresh: true,
+//       },
+//       ease: "none",
+//       scale: () => 1 - (stacks.length - index) * 0.025,
+//     });
+//   });
+
+//   ScrollTrigger.create({
+//     trigger: stack,
+//     start: "top top",
+//     pin: true,
+//     pinSpacing: false,
+//     markers: true,
+//     id: "pin",
+//     end: "max",
+//     invalidateOnRefresh: true,
+//   });
+// });
