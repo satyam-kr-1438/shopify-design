@@ -15,6 +15,13 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <!-- slick slider -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="slick-theme.css" />
+
     <!-- custom css -->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -224,13 +231,293 @@
       </div>
     </section>
 
-    <!--  -->
+    <!-- destination sections -->
+    <section class="wander-destination-section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-md-8 col-lg-7">
+            <div>
+              <div class="mb-5">
+                <p class="mb-2 d-none d-md-block">Choose from</p>
+                <h3 class="wander-headingStyle mb-2 d-none d-md-block">
+                  <span class="orangeText">Wander</span>lust Destinations
+                </h3>
+                <h3 class="wander-dest-mobile-heading d-block d-md-none text-center">
+                  Choose from 200+ Destinations
+                </h3>
+                <p class="wander-paraStyle d-none d-md-block">
+                  1 eSIM, 200 countries! Including 9 regional plans perfect for your multi-country
+                  trips.
+                </p>
+              </div>
+              <div class="destination-toggle-btn-box">
+                <div class="toggle-btn-outline">
+                  <button class="btn destination-toggle-btn active">
+                    <span class="destination-toggle-icon"
+                      ><img class="img-fluid" src="imgs/distanceWhite.svg" alt=""
+                    /></span>
+                    <span>Local</span>
+                  </button>
+                  <button class="btn destination-toggle-btn">
+                    <span class="destination-toggle-icon"
+                      ><img class="img-fluid" src="imgs/language.svg" alt=""
+                    /></span>
+                    <span>Regional</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-5 d-none d-md-block">
+            <div class="destination-search-box">
+              <div class="mt-4"><button class="btn wander-btn-outlined">View all</button></div>
+              <div class="w-100">
+                <div class="wander-destination-search position-relative">
+                  <input
+                    type="search"
+                    placeholder="Where are you wandering off to?"
+                    class="form-control form-control-lg searchInputStyle" />
+                  <span class="position-absolute search-input-destination-icon"
+                    ><img class="img-fluid" src="imgs/distanceWhite.svg" alt="destination icon"
+                  /></span>
+                  <span class="position-absolute destination-search-icon"
+                    ><img src="imgs/search01.svg" alt="search icon" class="img-fluid" />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 py-5">
+            <div class="d-flex align-items-center">
+              <span class="destinationHeading me-3">Continent:</span>
+
+              <div class="wander-popular-continents">
+                <span class="wander-destination me-2">Americas</span>
+                <span class="wander-destination me-2">Asia</span>
+                <span class="wander-destination me-2">Caribbean</span>
+                <span class="wander-destination me-2">Europe</span>
+                <span class="wander-destination me-2">Middle-East</span>
+                <span class="wander-destination me-2">Oceania</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row position-relative">
+          <div class="wander-destination-slider">
+            <div class="wander-destination-card-box">
+              <div class="wander-destination-card position-relative">
+                <div class="dest-card-corner-img position-absolute">
+                  <img src="imgs/flag.png" alt="" />
+                </div>
+                <div class="destination-card-img"><img src="imgs/unitedImg.png" alt="" /></div>
+                <div class="destination-card-content">
+                  <div class="dest-card-heading">United States</div>
+                  <div
+                    class="dest-card-specification d-flex justify-content-between align-items-end">
+                    <div class="d-flex flex-column">
+                      <span class="price-from-text">From</span>
+                      <span class="dest-card-price">$30</span>
+                    </div>
+                    <div class="signal">
+                      <img src="/imgs/signal.svg" alt="" /> <span class="network-type">5G</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="dest-card-button text-center">
+                  <button class="btn">Select Plan</button>
+                </div>
+              </div>
+            </div>
+            <div class="wander-destination-card-box">
+              <div class="wander-destination-card position-relative">
+                <div class="dest-card-corner-img position-absolute">
+                  <img src="imgs/flag.png" alt="" />
+                </div>
+                <div class="destination-card-img"><img src="imgs/unitedImg.png" alt="" /></div>
+                <div class="destination-card-content">
+                  <div class="dest-card-heading">Germany</div>
+                  <div
+                    class="dest-card-specification d-flex justify-content-between align-items-end">
+                    <div class="d-flex flex-column">
+                      <span class="price-from-text">From</span>
+                      <span class="dest-card-price">$30</span>
+                    </div>
+                    <div class="signal">
+                      <img src="/imgs/signal.svg" alt="" /> <span class="network-type">5G</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="dest-card-button text-center">
+                  <button class="btn">Select Plan</button>
+                </div>
+              </div>
+            </div>
+            <div class="wander-destination-card-box">
+              <div class="wander-destination-card position-relative">
+                <div class="dest-card-corner-img position-absolute">
+                  <img src="imgs/flag.png" alt="" />
+                </div>
+                <div class="destination-card-img"><img src="imgs/unitedImg.png" alt="" /></div>
+                <div class="destination-card-content">
+                  <div class="dest-card-heading">Mexico</div>
+                  <div
+                    class="dest-card-specification d-flex justify-content-between align-items-end">
+                    <div class="d-flex flex-column">
+                      <span class="price-from-text">From</span>
+                      <span class="dest-card-price">$30</span>
+                    </div>
+                    <div class="signal">
+                      <img src="/imgs/signal.svg" alt="" /> <span class="network-type">5G</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="dest-card-button text-center">
+                  <button class="btn">Select Plan</button>
+                </div>
+              </div>
+            </div>
+            <div class="wander-destination-card-box">
+              <div class="wander-destination-card position-relative">
+                <div class="dest-card-corner-img position-absolute">
+                  <img src="imgs/flag.png" alt="" />
+                </div>
+                <div class="destination-card-img"><img src="imgs/unitedImg.png" alt="" /></div>
+                <div class="destination-card-content">
+                  <div class="dest-card-heading">Singapore</div>
+                  <div
+                    class="dest-card-specification d-flex justify-content-between align-items-end">
+                    <div class="d-flex flex-column">
+                      <span class="price-from-text">From</span>
+                      <span class="dest-card-price">$30</span>
+                    </div>
+                    <div class="signal">
+                      <img src="/imgs/signal.svg" alt="" /> <span class="network-type">5G</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="dest-card-button text-center">
+                  <button class="btn">Select Plan</button>
+                </div>
+              </div>
+            </div>
+            <div class="wander-destination-card-box">
+              <div class="wander-destination-card position-relative">
+                <div class="dest-card-corner-img position-absolute">
+                  <img src="imgs/flag.png" alt="" />
+                </div>
+                <div class="destination-card-img"><img src="imgs/unitedImg.png" alt="" /></div>
+                <div class="destination-card-content">
+                  <div class="dest-card-heading">Argentina</div>
+                  <div
+                    class="dest-card-specification d-flex justify-content-between align-items-end">
+                    <div class="d-flex flex-column">
+                      <span class="price-from-text">From</span>
+                      <span class="dest-card-price">$30</span>
+                    </div>
+                    <div class="signal">
+                      <img src="/imgs/signal.svg" alt="" /> <span class="network-type">5G</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="dest-card-button text-center">
+                  <button class="btn">Select Plan</button>
+                </div>
+              </div>
+            </div>
+            <div class="wander-destination-card-box">
+              <div class="wander-destination-card position-relative">
+                <div class="dest-card-corner-img position-absolute">
+                  <img src="imgs/flag.png" alt="" />
+                </div>
+                <div class="destination-card-img"><img src="imgs/unitedImg.png" alt="" /></div>
+                <div class="destination-card-content">
+                  <div class="dest-card-heading">Singapore</div>
+                  <div
+                    class="dest-card-specification d-flex justify-content-between align-items-end">
+                    <div class="d-flex flex-column">
+                      <span class="price-from-text">From</span>
+                      <span class="dest-card-price">$30</span>
+                    </div>
+                    <div class="signal">
+                      <img src="/imgs/signal.svg" alt="" /> <span class="network-type">5G</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="dest-card-button text-center">
+                  <button class="btn">Select Plan</button>
+                </div>
+              </div>
+            </div>
+            <div class="wander-destination-card-box">
+              <div class="wander-destination-card position-relative">
+                <div class="dest-card-corner-img position-absolute">
+                  <img src="imgs/flag.png" alt="" />
+                </div>
+                <div class="destination-card-img"><img src="imgs/unitedImg.png" alt="" /></div>
+                <div class="destination-card-content">
+                  <div class="dest-card-heading">Argentina</div>
+                  <div
+                    class="dest-card-specification d-flex justify-content-between align-items-end">
+                    <div class="d-flex flex-column">
+                      <span class="price-from-text">From</span>
+                      <span class="dest-card-price">$30</span>
+                    </div>
+                    <div class="signal">
+                      <img src="/imgs/signal.svg" alt="" /> <span class="network-type">5G</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="dest-card-button text-center">
+                  <button class="btn">Select Plan</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wander-slider-arrows d-none d-md-flex">
+            <div class="wander-prev wander-arrow"><img src="imgs/arrow_outward.svg" alt="" /></div>
+            <div class="wander-next wander-arrow"><img src="imgs/arrow_outward.svg" alt="" /></div>
+          </div>
+        </div>
+        <div class="row d-flex d-md-none">
+          <div><button class="btn wander-btn-outlined w-100">View all</button></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- wander stack section -->
+    <section class="wander-stack-section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-md-5">
+            <div>
+              <p class="my-3">The wander's Guide to eSIM</p>
+              <h3 class="wander-headingStyle mt-4">
+                Start <span class="orangeText">Wander</span>ing in a few simple steps
+              </h3>
+            </div>
+            <div class="mt-5">
+              <button class="btn wander-btn-primary me-2">Explore Our Plans</button>
+              <button class="btn wander-btn">Chat with us</button>
+            </div>
+          </div>
+          <div class="col-12 col-md-7"></div>
+        </div>
+      </div>
+    </section>
+
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!-- slick slider -->
+    <script
+      defer="defer"
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- custom js -->
     <script src="script.js"></script>
   </body>
