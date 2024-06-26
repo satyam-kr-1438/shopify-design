@@ -573,6 +573,80 @@ section .container-fluid {
   height: 100%;
 }
 
+/* faq section */
+
+.wander-faq-section {
+  padding: 8rem 0;
+}
+
+.faq-right {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+
+.wander-btn-faq {
+  max-width: 180px;
+}
+
+.accordion-item:first-of-type .accordion-button {
+  border-radius: 0;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #252525;
+  background: transparent;
+  box-shadow: none;
+  padding: 1.5rem 0;
+}
+
+.accordion-button {
+  padding: 1.5rem 0;
+  font-size: 18px;
+}
+
+.accordion-item {
+  border: 1px solid #252525;
+  border-left: 0;
+  border-right: 0;
+}
+
+.accordion-item:first-of-type {
+  border-radius: 0;
+}
+
+.accordion-item:first-of-type .accordion-button {
+  font-size: 18px;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+  border-radius: 0;
+}
+
+.accordion-body {
+  padding: 0.2rem 0 1.5rem 0;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(imgs/add.svg);
+  transform: rotate(45deg);
+}
+
+.accordion-button::after {
+  background-image: url(imgs/add.svg);
+  width: 16px;
+  height: 16px;
+  background-size: 15px;
+}
+
+.accordion-item:last-of-type {
+  border-radius: 0;
+}
+
+.wander-accordian {
+  width: 90%;
+}
+
 /* media queries */
 
 @media (max-width: 575.98px) {
@@ -755,5 +829,17 @@ section .container-fluid {
 
   .testimonial-dp {
     width: 30px;
+  }
+
+  /* faq section */
+  .wander-accordian {
+    width: 100%;
+  }
+
+  .wander-faq-mobile-btn {
+    margin-top: 4rem;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
