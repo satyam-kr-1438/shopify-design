@@ -691,6 +691,80 @@ section .container-fluid {
   margin-right: 1rem;
 }
 
+/* newsletter section */
+
+.wander-newsletter-section {
+  padding: 8rem 0;
+}
+
+.wander-newsletter-bg {
+  height: 550px;
+  padding: 4rem 5rem;
+  border-radius: 40px;
+  background: linear-gradient(#ffd980 0%, #facb5e 29%, #c4f9f5 61%, #6bd3c9 99%);
+}
+
+.newsletter-input-box {
+  width: 50%;
+}
+
+.newletter-info {
+  font-size: 12px;
+  border: 1px solid #252525;
+  background: #eff9f8;
+  border-radius: 8px;
+  width: max-content;
+  padding: 4px 10px;
+  margin-bottom: 1rem;
+}
+
+.newsletter-input {
+  position: relative;
+}
+
+.newsletterInputStyle {
+  border: 1.5px solid #252525;
+  background: transparent;
+  font-size: 14px;
+  padding: 12px 42px 12px 12px;
+  color: #252525;
+  &::placeholder {
+    font-size: 14px;
+    color: #252525;
+  }
+  &:focus {
+    background: transparent;
+  }
+}
+
+.newsletter-input-icon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  top: 9px;
+  right: 9px;
+}
+
+.newsletter-input-icon img {
+  height: 12px;
+}
+
+.newsletter-img-box {
+  position: relative;
+}
+
+.newsletter-img-box img {
+  position: absolute;
+  top: -115px;
+  width: 90%;
+  right: 0;
+}
+
 /* media queries */
 
 @media (max-width: 575.98px) {
@@ -907,5 +981,39 @@ section .container-fluid {
   .wander-commit-img img {
     width: 100%;
     margin-right: 1rem;
+  }
+
+  .newsletter-text,
+  .newsletter-input-box {
+    text-align: center;
+  }
+
+  .wander-newsletter-bg {
+    height: 650px;
+    padding: 4rem 2rem;
+    border-radius: 20px;
+    background: linear-gradient(#ffd980 0%, #facb5e 29%, #c4f9f5 61%, #6bd3c9 99%);
+  }
+
+  .newsletter-input-box {
+    width: 100%;
+  }
+  .newsletter-img-box img {
+    position: absolute;
+    top: 20px;
+    width: 90%;
+    right: 0;
+  }
+
+  .newletter-info {
+    margin: 1rem auto;
+  }
+
+  .newsletterInputStyle {
+    border-radius: 16px;
+  }
+
+  .stack-div {
+    margin-bottom: 1rem;
   }
 }
