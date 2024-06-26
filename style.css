@@ -647,6 +647,50 @@ section .container-fluid {
   width: 90%;
 }
 
+/* commitment section */
+
+.wander-commit-tags {
+  display: flex;
+  column-gap: 12px;
+}
+
+.commit-tag {
+  border: 2px solid #2ec4b6;
+  border-radius: 12px;
+  padding: 4px 12px;
+  display: flex;
+  align-items: center;
+}
+
+.greenText {
+  color: #2ec4b6;
+}
+
+.wander-btn-secondary {
+  background: #2ec4b6;
+  padding: 1rem 1.5rem;
+  border-radius: 26px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
+  color: #fff;
+}
+
+.wander-commit-img {
+  text-align: right;
+}
+
+.commit-tag img {
+  width: 14px;
+  margin-right: 10px;
+}
+
+.wander-commit-img img {
+  width: 70%;
+  margin-right: 1rem;
+}
+
 /* media queries */
 
 @media (max-width: 575.98px) {
@@ -841,5 +885,27 @@ section .container-fluid {
     max-width: 200px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  /* commitment section */
+
+  .wander-commit-tags {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    align-items: center;
+  }
+
+  .commitment-text-box {
+    text-align: center;
+  }
+
+  .wander-commit-img {
+    text-align: center;
+  }
+
+  .wander-commit-img img {
+    width: 100%;
+    margin-right: 1rem;
   }
 }
