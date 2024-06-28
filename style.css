@@ -102,6 +102,252 @@ section .container-fluid {
   border: 2px solid #ff9500;
 }
 
+/* header-section */
+
+.wander-header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+.wander-header .container-fluid {
+  margin: 0 3rem;
+}
+
+nav .navbar {
+  background: transparent;
+}
+
+.wander-header-container {
+  padding: 1rem 1.5rem;
+  border-radius: 30px;
+  border: 1.4px solid rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.wander-header-logo {
+  display: flex;
+  align-items: center;
+  &:hover .logo-niddle img {
+    transform: rotate(30deg);
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+.wander-header-logo-icon img,
+.logo-niddle img,
+.wander-logo-name img {
+  width: 80%;
+}
+
+.wander-header-logo-icon {
+  position: relative;
+}
+
+.logo-niddle {
+  position: absolute;
+  left: 8px;
+  top: 5px;
+}
+
+.wander-header-right button img {
+  width: 24px;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 1rem;
+}
+
+.navbar-nav .nav-item a {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
+  letter-spacing: -0.5px;
+  color: #000;
+}
+
+.wander-header-select {
+  border: 1px solid #ff9500;
+}
+
+.wander-dropdown-item {
+  position: static;
+}
+
+.dropdown-destination-box {
+  background: #fafafa;
+  padding: 1.2rem 0.8rem;
+  height: 100%;
+}
+
+.dropdown-middle-box {
+  padding: 2rem 0;
+}
+
+.local-destination-btn-box {
+  padding-bottom: 0.6rem;
+  &:hover {
+    background: #fff;
+    border-radius: 20px;
+  }
+}
+.wander-destination-dropdown {
+  width: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.local-destionation-btn {
+  font-family: "Manrope", sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.local-destionation-btn span img {
+  width: 16px;
+}
+
+ul.local-dest-ul {
+  padding-left: 3.1rem;
+  list-style: none;
+}
+
+li.local-detination-item {
+  margin-bottom: 0.5rem;
+}
+
+li.local-detination-item a {
+  text-decoration: none;
+}
+
+.dest-info-text {
+  font-size: 14px;
+  color: #7d7d7d;
+}
+
+.dropdown-regional-destinations {
+  margin-top: 1.2rem;
+}
+
+.country-filter-name {
+  font-size: 18px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  margin-right: 2rem;
+}
+
+.country-filter-tag a {
+  padding: 0.2rem 2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  margin-right: 1rem;
+  display: block;
+  &:hover {
+    background: #ffb300;
+  }
+}
+
+.country-filter-tag a {
+  text-decoration: none;
+}
+
+.country-filter-ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.dropdonw-country-names-ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-height: 400px;
+}
+
+.country-name-item .dropdown-country-flag-icon {
+  border: 1px solid #b7b7b7;
+  border-radius: 6px;
+  display: inline-block;
+  margin-right: 0.6rem;
+}
+
+.country-name-item {
+  max-width: 220px;
+  padding: 0.7rem 0.4rem;
+  &:hover {
+    background: #e7e7e7;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+}
+
+.country-name-item a {
+  text-decoration: none;
+}
+
+.country-name-item .dropdown-country-flag-icon img {
+  border-radius: 8px;
+  padding: 2px;
+  border: 2px solid #fff;
+  width: 34px;
+}
+
+.dropdown-right {
+  background: radial-gradient(
+      131.55% 135.35% at 63.17% 62.17%,
+      #ffd980 0%,
+      rgba(255, 179, 0, 0.56) 29.33%,
+      #cbf3f0 61.49%,
+      #2ec4b6 82.98%
+    ),
+    #d9d9d9;
+  height: 100%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown-feature-ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dropdown-feature-item {
+  font-size: 30px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.4rem;
+}
+
+.dropdown-feature-icon {
+  background: #fff;
+  display: flex;
+  width: 70px;
+  height: 70px;
+  border-radius: 16px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.dropdown-feature-title {
+  word-break: break-word;
+  line-height: 30px;
+  width: 70%;
+}
+
+.dropdown-feature-icon img {
+  width: 20px;
+}
+
 /* hero section */
 
 .wander-hero-section {
@@ -916,6 +1162,49 @@ footer .container-fluid {
   html {
     font-size: 80%;
   }
+  /* header section */
+
+  .wander-header .container-fluid {
+    margin: 0 1rem;
+  }
+
+  .wander-header-container {
+    background: rgba(255, 255, 255, 1);
+    backdrop-filter: blur(50px);
+  }
+
+  .dropdown-destination-box {
+    background: transparent;
+  }
+
+  .wander-destination-dropdown {
+    border-radius: 0;
+    border: none;
+    background: transparent;
+  }
+
+  .logo-niddle {
+    left: 6px;
+    top: 0;
+  }
+
+  .logo-niddle img {
+    width: 60%;
+  }
+
+  .navbar-brand {
+    width: 50%;
+  }
+
+  .wander-header .navbar-nav .nav-item {
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.5);
+    margin-left: 1.4rem;
+    margin-right: 1.4rem;
+    padding: 1rem 0;
+  }
+
+  /* hero section */
+
   .wander-hero-section {
     /* background-size: cover; */
     background-position: center;
