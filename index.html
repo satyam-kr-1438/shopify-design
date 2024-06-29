@@ -63,6 +63,7 @@
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
+                  data-bs-auto-close="false"
                   aria-expanded="false">
                   Destinations
                 </a>
@@ -72,8 +73,8 @@
                       <div class="col-12 col-lg-3">
                         <div class="dropdown-destination-box">
                           <div class="dropdown-local-destinations">
-                            <div class="local-destination-btn-box active">
-                              <button class="btn local-destionation-btn">
+                            <div class="local-destination-btn-box local-box active">
+                              <button class="btn local-destionation-btn btn-local">
                                 <span class="me-3"
                                   ><img class="img-fluid" src="imgs/distance.svg" alt=""
                                 /></span>
@@ -90,8 +91,8 @@
                             </div>
                           </div>
                           <div class="dropdown-regional-destinations">
-                            <div class="local-destination-btn-box">
-                              <button class="btn local-destionation-btn">
+                            <div class="local-destination-btn-box region-box">
+                              <button class="btn local-destionation-btn btn-region">
                                 <span class="me-3"
                                   ><img class="img-fluid" src="imgs/distance.svg" alt=""
                                 /></span>
@@ -302,15 +303,115 @@
                               </li>
                             </ul>
                           </div>
+
                           <div class="dropdown-see-all-btn text-center mt-5">
                             <button class="btn wander-btn-outlined w-50">
                               See all destinations
                             </button>
                           </div>
                         </div>
+                        <div class="dropdown-middle-box-regional">
+                          <div class="dropdown-regional-heading">
+                            <span>Regions</span>
+                          </div>
+                          <div class="dropdown-regional-names-row">
+                            <ul class="dropdown-regional-maps-ul">
+                              <li class="regional-name-item">
+                                <a href=""
+                                  ><div
+                                    class="dropdown-regional-bg"
+                                    style="
+                                      background-image: url('imgs/Caucasus.svg');
+                                      background-size: contain;
+                                    "></div>
+                                  <span class="dropdown-regional-text"> Caucasus </span></a
+                                >
+                              </li>
+                              <li class="regional-name-item">
+                                <a href=""
+                                  ><div
+                                    class="dropdown-regional-bg"
+                                    style="
+                                      background-image: url('imgs/Oceania.svg');
+                                      background-size: cover;
+                                    ">
+                                    >
+                                  </div>
+                                  <span class="dropdown-regional-text"> Oceania </span></a
+                                >
+                              </li>
+                              <li class="regional-name-item">
+                                <a href=""
+                                  ><div
+                                    class="dropdown-regional-bg"
+                                    style="
+                                      background-image: url('imgs/Latin\ America.svg');
+                                      background-size: contain;
+                                    "></div>
+                                  <span class="dropdown-regional-text"> Latin America </span></a
+                                >
+                              </li>
+                              <li class="regional-name-item">
+                                <a href=""
+                                  ><div
+                                    class="dropdown-regional-bg"
+                                    style="
+                                      background-image: url('imgs/caribbean.svg');
+                                      background-size: cover;
+                                    "></div>
+                                  <span class="dropdown-regional-text"> Caribbean</span></a
+                                >
+                              </li>
+                              <li class="regional-name-item">
+                                <a href=""
+                                  ><div
+                                    class="dropdown-regional-bg"
+                                    style="
+                                      background-image: url('imgs/Asia\ p_1\ 1.svg');
+                                      background-size: cover;
+                                    "></div>
+                                  <span class="dropdown-regional-text"> Asia Pacific </span></a
+                                >
+                              </li>
+                              <li class="regional-name-item">
+                                <a href=""
+                                  ><div
+                                    class="dropdown-regional-bg"
+                                    style="
+                                      background-image: url('imgs/balkans.svg');
+                                      background-size: cover;
+                                    "></div>
+                                  <span class="dropdown-regional-text"> Balkans </span></a
+                                >
+                              </li>
+                              <li class="regional-name-item">
+                                <a href=""
+                                  ><div
+                                    class="dropdown-regional-bg"
+                                    style="
+                                      background-image: url('imgs/Europe.svg');
+                                      background-size: contain;
+                                    "></div>
+                                  <span class="dropdown-regional-text"> Europe </span></a
+                                >
+                              </li>
+                              <li class="regional-name-item">
+                                <a href=""
+                                  ><div
+                                    class="dropdown-regional-bg"
+                                    style="
+                                      background-image: url('imgs/middle-east.svg');
+                                      background-size: contain;
+                                    "></div>
+                                  <span class="dropdown-regional-text"> Middle East </span></a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
                       </div>
                       <div class="col-12 col-lg-3 d-none d-lg-block">
-                        <div class="dropdown-right">
+                        <div class="dropdown-right dropdown-right-feature">
                           <ul class="dropdown-feature-ul">
                             <li class="dropdown-feature-item">
                               <div class="dropdown-feature-icon">
@@ -337,6 +438,89 @@
                               <div class="dropdown-feature-title">No Hidden Charges</div>
                             </li>
                           </ul>
+                        </div>
+                        <div class="dropdown-right-card dropdown-right">
+                          <div class="wander-destination-card-box">
+                            <div class="wander-destination-card position-relative">
+                              <div class="dest-card-corner-img position-absolute">
+                                <img src="imgs/flag.png" alt="" />
+                              </div>
+                              <div class="destination-card-img">
+                                <img src="imgs/unitedImg.png" alt="" />
+                              </div>
+                              <div class="destination-card-content">
+                                <div class="dest-card-heading">United States</div>
+                                <div
+                                  class="dest-card-specification d-flex justify-content-between align-items-end">
+                                  <div class="d-flex flex-column">
+                                    <span class="price-from-text">From</span>
+                                    <span class="dest-card-price">$30</span>
+                                  </div>
+                                  <div class="signal">
+                                    <img src="/imgs/signal.svg" alt="" />
+                                    <span class="network-type">5G</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="dest-card-button text-center">
+                                <button class="btn">Select Plan</button>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="mb-2 dropdown-right-feature-list">
+                              <span class="me-2"><img src="imgs/right-done.svg" alt="" /></span
+                              ><span>32 plan options available</span>
+                            </div>
+                            <div class="mb-2 dropdown-right-feature-list">
+                              <span class="me-2"><img src="imgs/right-done.svg" alt="" /></span
+                              ><span>5G and hotspot-enabled</span>
+                            </div>
+                            <div class="mb-2 dropdown-right-feature-list">
+                              <span class="me-2"><img src="imgs/right-done.svg" alt="" /></span
+                              ><span>Activation within 2 mins</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="dropdown-right-card-region dropdown-right">
+                          <div class="wander-destination-card-box">
+                            <div class="wander-destination-card">
+                              <div class="destination-card-img">
+                                <img src="imgs/unitedImg.png" alt="" />
+                              </div>
+                              <div class="destination-card-content">
+                                <div class="dest-card-heading">United States</div>
+                                <div
+                                  class="dest-card-specification d-flex justify-content-between align-items-end">
+                                  <div class="d-flex flex-column">
+                                    <span class="price-from-text">From</span>
+                                    <span class="dest-card-price">$30</span>
+                                  </div>
+                                  <div class="signal">
+                                    <img src="/imgs/signal.svg" alt="" />
+                                    <span class="network-type">5G</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="dest-card-button text-center">
+                                <button class="btn">Select Plan</button>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="mb-2 dropdown-right-feature-list">
+                              <span class="me-2"><img src="imgs/right-done.svg" alt="" /></span
+                              ><span>32 plan options available</span>
+                            </div>
+                            <div class="mb-2 dropdown-right-feature-list">
+                              <span class="me-2"><img src="imgs/right-done.svg" alt="" /></span
+                              ><span>5G and hotspot-enabled</span>
+                            </div>
+                            <div class="mb-2 dropdown-right-feature-list">
+                              <span class="me-2"><img src="imgs/right-done.svg" alt="" /></span
+                              ><span>Activation within 2 mins</span>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
