@@ -1619,7 +1619,6 @@ body.no-scroll {
 }
 
 .navbar-collapse {
-  min-height: 90vh; /* Adjust this value as needed */
   max-height: 90vh;
   overflow-y: auto;
 }
