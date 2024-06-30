@@ -62,7 +62,7 @@ section .container-fluid {
   border-radius: 20px;
   border: 1px solid rgba(0, 0, 0, 0.3);
   &::placeholder {
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: #7d7d7d;
   }
 }
@@ -113,6 +113,7 @@ section .container-fluid {
   text-transform: uppercase;
   border-radius: 26px;
   border: 2px solid #ff9500;
+  width: 50%;
 }
 
 /* header-section */
@@ -1533,6 +1534,82 @@ footer .container-fluid {
   body {
     scrollbar-width: none;
   }
+
+  /* additional css */
+
+  body.no-scroll {
+    overflow: hidden;
+  }
+
+  .navbar-collapse {
+    min-height: 90vh; /* Adjust this value as needed */
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  .wander-btn-outlined {
+    padding: 0.8rem 1.5rem;
+    font-weight: 400;
+    font-size: 16px;
+    border: 1px solid #ff9500;
+    width: 100%;
+    border-radius: 16px;
+  }
+
+  .navbar-collapse .wander-search-input {
+    margin: 3rem 0;
+  }
+
+  .navbar-collapse .wander-search-input .searchInputStyle {
+    padding-left: 40px;
+    padding-bottom: 10px;
+    height: 50px;
+    border-radius: 12px;
+
+    &::placeholder {
+      font-size: 14px;
+    }
+  }
+  .searchInputStyle {
+    padding-left: 50px;
+    padding-bottom: 10px;
+    height: 60px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    &::placeholder {
+      font-size: 1rem;
+      color: #7d7d7d;
+    }
+  }
+
+  .navbar-collapse .wander-search-input .search-input-search-icon {
+    top: 9px;
+    right: 14px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .navbar-collapse .wander-search-input .search-input-search-icon img {
+    width: 12px;
+  }
+
+  .navbar-collapse .wander-search-input .search-input-destination-icon {
+    top: 14px;
+    left: 18px;
+    width: 10px;
+  }
+
+  .wander-testimonial-section {
+    overflow: hidden;
+  }
+
+  .wander-testimonial-bg .row {
+    margin-right: 0;
+  }
+
+  .wander-testimonial-bg .row .col-12 {
+    padding: 0;
+  }
 }
 
 /* header additional css */
@@ -1612,13 +1689,4 @@ footer .container-fluid {
     background: #ff9500;
     color: #fff;
   }
-}
-
-body.no-scroll {
-  overflow: hidden;
-}
-
-.navbar-collapse {
-  max-height: 90vh;
-  overflow-y: auto;
 }

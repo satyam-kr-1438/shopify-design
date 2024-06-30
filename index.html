@@ -54,6 +54,18 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarScroll">
+            <div class="wander-search-input position-relative d-block d-lg-none">
+              <input
+                type="search"
+                placeholder="Where are you wandering off to?"
+                class="form-control form-control-lg searchInputStyle" />
+              <span class="position-absolute search-input-destination-icon"
+                ><img class="img-fluid" src="imgs/distance.svg" alt="destination icon"
+              /></span>
+              <span class="position-absolute search-input-search-icon"
+                ><img src="imgs/search.svg" alt="search icon" class="img-fluid" />
+              </span>
+            </div>
             <ul
               class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll"
               style="--bs-scroll-height: 100x">
@@ -105,6 +117,9 @@
                                 <li class="local-detination-item"><a href="">Middle-East</a></li>
                               </ul>
                             </div>
+                          </div>
+                          <div class="dropdown-see-all-btn text-center mt-3 d-block d-lg-none">
+                            <button class="btn wander-btn-outlined">See all destinations</button>
                           </div>
                         </div>
                       </div>
@@ -550,6 +565,7 @@
                 <a class="nav-link">Contact Us</a>
               </li>
             </ul>
+
             <div class="d-flex wander-header-right d-none d-lg-flex">
               <select class="form-select wander-header-select" aria-label=".form-select-lg example">
                 <option selected>EN-USD($)</option>
