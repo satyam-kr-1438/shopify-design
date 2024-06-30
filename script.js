@@ -146,3 +146,65 @@ $(document).ready(function () {
 //     invalidateOnRefresh: true,
 //   });
 // });
+
+$(document).ready(function () {
+  // When the .btn-local is clicked
+  $(".btn-local").click(function () {
+    // Add 'active' class to .local-box and remove it from .region-box
+    $(".local-box").addClass("active");
+    $(".region-box").removeClass("active");
+
+    // Show .dropdown-middle-box and hide .dropdown-middle-box-regional
+    $(".dropdown-middle-box").show();
+    $(".dropdown-middle-box-regional").hide();
+  });
+
+  // When the .btn-region is clicked
+  $(".btn-region").click(function () {
+    // Add 'active' class to .region-box and remove it from .local-box
+    $(".region-box").addClass("active");
+    $(".local-box").removeClass("active");
+
+    // Hide .dropdown-middle-box and show .dropdown-middle-box-regional
+    $(".dropdown-middle-box").hide();
+    $(".dropdown-middle-box-regional").show();
+  });
+
+  $(".country-name-item").hover(function () {
+    // Hide .dropdown-right-feature and show .dropdown-right-card
+    $(".dropdown-right-feature").hide();
+    $(".dropdown-right-card").show();
+    $(".country-name-item").removeClass("hovered");
+    $(this).addClass("hovered");
+  });
+
+  $(".regional-name-item").hover(function () {
+    // Hide .dropdown-right-feature and show .dropdown-right-card-region
+    $(".dropdown-right-feature").hide();
+    $(".dropdown-right-card").hide();
+    $(".dropdown-right-card-region").show();
+
+    // Remove 'hovered' class from all .region-name-item
+    $(".regional-name-item").removeClass("hovered");
+    // Add 'hovered' class to the currently hovered item
+    $(this).addClass("hovered");
+  });
+
+  $(".btn-local, .btn-region").click(function () {
+    // Show .dropdown-right-feature and hide .dropdown-right-card
+    $(".dropdown-right-feature").show();
+    $(".dropdown-right-card").hide();
+    $(".dropdown-right-card-region").hide();
+    $(".country-name-item, .regional-name-item").removeClass("hovered");
+  });
+
+  //prevent scrolling in mobile while toggle menu is opened
+  $("#navbarNav").on("shown.bs.collapse", function () {
+    $("body").addClass("no-scroll");
+  });
+
+  // Remove 'no-scroll' class when navbar is hidden
+  $("#navbarNav").on("hidden.bs.collapse", function () {
+    $("body").removeClass("no-scroll");
+  });
+});
