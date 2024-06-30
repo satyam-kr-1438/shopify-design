@@ -197,14 +197,4 @@ $(document).ready(function () {
     $(".dropdown-right-card-region").hide();
     $(".country-name-item, .regional-name-item").removeClass("hovered");
   });
-
-  //prevent scrolling in mobile while toggle menu is opened
-  $("#navbarNav").on("shown.bs.collapse", function () {
-    $("body").addClass("no-scroll");
-  });
-
-  // Remove 'no-scroll' class when navbar is hidden
-  $("#navbarNav").on("hidden.bs.collapse", function () {
-    $("body").removeClass("no-scroll");
-  });
 });
