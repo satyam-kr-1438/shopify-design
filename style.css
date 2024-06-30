@@ -113,7 +113,6 @@ section .container-fluid {
   text-transform: uppercase;
   border-radius: 26px;
   border: 2px solid #ff9500;
-  width: 50%;
 }
 
 /* header-section */
@@ -376,7 +375,7 @@ li.local-detination-item a {
 
 .wander-destination {
   display: inline-block;
-  font-size: 12px;
+  font-size: 16px;
   border: 1px solid #666666;
   border-radius: 16px;
   padding: 8px 16px;
@@ -955,7 +954,8 @@ li.local-detination-item a {
 /* newsletter section */
 
 .wander-newsletter-section {
-  padding: 8rem 0;
+  padding-top: 8rem;
+  padding-bottom: 6rem;
 }
 
 .wander-newsletter-bg {
@@ -1038,7 +1038,7 @@ footer .container-fluid {
 
 .wander-footer-bg {
   position: absolute;
-  top: -340px;
+  bottom: 0;
 }
 
 .wander-footer-bg svg {
@@ -1069,6 +1069,7 @@ footer .container-fluid {
 .wander-footer-content-box {
   z-index: 55;
   position: relative;
+  padding-bottom: 2rem;
 }
 
 .wander-footer-text-logo {
@@ -1647,8 +1648,8 @@ footer .container-fluid {
 }
 
 .regional-name-item {
-  width: 140px;
-  height: 140px;
+  width: 142px;
+  height: 142px;
   text-align: center;
   &.hovered .dropdown-regional-bg {
     background: #eaeaea;
