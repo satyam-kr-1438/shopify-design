@@ -235,4 +235,26 @@ $(document).ready(function () {
     $(".dropdown-right-card-region").hide();
     $(".country-name-item, .regional-name-item").removeClass("hovered");
   });
+
+  $("#mainSearchInput").on("click", function () {
+    $("#searchModal").modal("show");
+  });
+
+  $(".searchInputStyle").on("focus", function () {
+    var $wrapper = $(this).closest(".search-input-wrapper");
+    $wrapper.find(".search-popup").show(); // Show the popup in the same wrapper
+  });
+
+  $(".searchInputStyle").on("blur", function () {
+    var $wrapper = $(this).closest(".search-input-wrapper");
+    // Use setTimeout to allow click events within the popup before it hides
+    setTimeout(function () {
+      $wrapper.find(".search-popup").hide(); // Hide the popup in the same wrapper
+    }, 100);
+  });
+
+  // Optional: Prevent the popup from hiding if it's clicked
+  $(".search-popup").on("mousedown", function (event) {
+    event.preventDefault(); // Prevent the blur event from firing
+  });
 });

@@ -207,3 +207,9 @@
     padding: 0.8rem;
   }
 }
+
+.wander-heading-small {
+  font-size: 24px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+}

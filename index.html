@@ -24,6 +24,7 @@
 
     <!-- custom css -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-search-destinations.css" />
   </head>
   <body>
     <!-- header -->
@@ -43,16 +44,23 @@
                 <img class="img-fluid" src="imgs/wander-name-logo.svg" alt="" />
               </div></div
           ></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarScroll"
-            aria-controls="navbarScroll"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <div>
+            <button class="header-search-mobile btn d-inline-block d-lg-none">
+              <img src="imgs/search-black.svg" alt="" />
+            </button>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarScroll"
+              aria-controls="navbarScroll"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
           <div class="collapse navbar-collapse" id="navbarScroll">
             <div class="wander-search-input position-relative d-block d-lg-none">
               <input
@@ -603,17 +611,65 @@
                 </p>
               </div>
               <div class="wander-hero-section-search pt-3">
-                <div class="wander-search-input position-relative">
-                  <input
-                    type="search"
-                    placeholder="Where are you wandering off to?"
-                    class="form-control form-control-lg searchInputStyle" />
-                  <span class="position-absolute search-input-destination-icon"
-                    ><img class="img-fluid" src="imgs/distance.svg" alt="destination icon"
-                  /></span>
-                  <span class="position-absolute search-input-search-icon"
-                    ><img src="imgs/search.svg" alt="search icon" class="img-fluid" />
-                  </span>
+                <div class="search-input-wrapper">
+                  <div class="wander-search-input position-relative">
+                    <input
+                      id="mainSearchInput"
+                      type="search"
+                      placeholder="Where are you wandering off to?"
+                      class="form-control form-control-lg searchInputStyle" />
+                    <span class="position-absolute search-input-destination-icon"
+                      ><img class="img-fluid" src="imgs/distance.svg" alt="destination icon"
+                    /></span>
+                    <span class="position-absolute search-input-search-icon"
+                      ><img src="imgs/search.svg" alt="search icon" class="img-fluid" />
+                    </span>
+                  </div>
+                  <div class="search-popup">
+                    <span class="search-info-text">People searched for</span>
+                    <ul class="search-popup-ul">
+                      <li class="search-popup-item">
+                        <div class="search-popup-img">
+                          <img src="imgs/search-flag.svg" alt="" />
+                        </div>
+                        <div class="search-popup-result">XXX</div>
+                        <div class="search-resutl-tags">
+                          <span class="search-result-tag sr-local">Local</span>
+                          <span class="search-result-tag sr-5g">5G</span>
+                        </div>
+                      </li>
+                      <li class="search-popup-item">
+                        <div class="search-popup-img">
+                          <img src="imgs/search-flag.svg" alt="" />
+                        </div>
+                        <div class="search-popup-result">United Arab Emirates</div>
+                        <div class="search-resutl-tags">
+                          <span class="search-result-tag sr-local">Local</span>
+                          <span class="search-result-tag sr-5g">5G</span>
+                        </div>
+                      </li>
+                      <li class="search-popup-item">
+                        <div class="search-popup-img">
+                          <img src="imgs/search-flag.svg" alt="" />
+                        </div>
+                        <div class="search-popup-result">United Arab Emirates</div>
+                        <div class="search-resutl-tags">
+                          <span class="search-result-tag sr-local">Local</span>
+                          <span class="search-result-tag sr-5g">5G</span>
+                        </div>
+                      </li>
+                      <li class="search-popup-item">
+                        <div class="search-popup-img">
+                          <img src="imgs/search-flag.svg" alt="" />
+                        </div>
+                        <div class="search-popup-result">United States</div>
+                        <div class="search-resutl-tags">
+                          <span class="search-result-tag sr-local">Local</span>
+                          <span class="search-result-tag sr-5g">5G</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
                 <div class="wander-hero-destination mt-4">
                   <p class="destinationHeading mb-2">Popular Destinations</p>
@@ -1046,7 +1102,7 @@
     </section>
 
     <!-- wander stack section -->
-    <section class="wander-stack-section">
+    <section class="wander-stack-section position-relative">
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 col-md-4 stack-left-pin">
@@ -1086,7 +1142,7 @@
                 <img class="img-fluid" src="/imgs/Group.png" alt="" />
               </div>
             </div>
-            <div class="stack-div wander-stack-2 d-block d-md-none">
+            <div class="stack-div wander-stack-2">
               <div class="d-flex flex-column text-center">
                 <div class="stack-text">
                   <h3 class="mb-4 stack-heading">Purchase your data plan</h3>
@@ -1103,7 +1159,7 @@
                 <img class="img-fluid" src="/imgs/Group.png" alt="" />
               </div>
             </div>
-            <div class="stack-div wander-stack-3 d-block d-md-none">
+            <div class="stack-div wander-stack-3">
               <div class="d-flex flex-column text-center">
                 <div class="stack-text">
                   <h3 class="mb-4 stack-heading">Purchase your data plan</h3>
@@ -1123,6 +1179,7 @@
           </div>
         </div>
       </div>
+      <div class="overlay-2">{""}</div>
     </section>
 
     <!-- wander-features sections -->
@@ -1220,69 +1277,71 @@
             <div class="col-12 col-md-7">
               <div class="d-flex wander-testimonial-box">
                 <div class="testimonial-slider-1">
-                  <div class="wander-testimonial-card">
-                    <div class="testimonial-stars mb-4">
-                      <img class="img-fluid" src="imgs/Stars.svg" alt="" />
-                    </div>
-                    <h4 class="wander-testimonial-heading mb-3">Super easy and worked well</h4>
-                    <p class="testimonial-para">
-                      Took me just a few mins to setup and way cheaper than Airalo - my friends and
-                      I had really good network on our Euro trip
-                    </p>
-                    <div class="testimonial-client-deatails d-flex mt-3">
-                      <div class="testimonial-dp me-2">
-                        <img class="img-fluid" src="imgs/testimonial-img.png" alt="" />
+                  <div class="wander-testimonial-scroller" data-direction="left" data-speed="slow">
+                    <div class="wander-testimonial-card">
+                      <div class="testimonial-stars mb-4">
+                        <img class="img-fluid" src="imgs/Stars.svg" alt="" />
                       </div>
-                      <div>
-                        <div class="testimonial-name me-2">Rachel Hughes</div>
-                        <p class="testimonial-plan"><b>Plan:</b> Europe</p>
-                      </div>
-                      <div class="verification-badge">
-                        <span><img src="imgs/Approval.png" alt="" /> Verified Buyer</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="wander-testimonial-card">
-                    <div class="testimonial-stars mb-4">
-                      <img class="img-fluid" src="imgs/Stars.svg" alt="" />
-                    </div>
-                    <h4 class="wander-testimonial-heading mb-3">Super easy and worked well</h4>
-                    <p class="testimonial-para">
-                      Took me just a few mins to setup and way cheaper than Airalo - my friends and
-                      I had really good network on our Euro trip
-                    </p>
-                    <div class="testimonial-client-deatails d-flex mt-3">
-                      <div class="testimonial-dp me-2">
-                        <img class="img-fluid" src="imgs/testimonial-img.png" alt="" />
-                      </div>
-                      <div>
-                        <div class="testimonial-name me-2">Rachel Hughes</div>
-                        <p class="testimonial-plan"><b>Plan:</b> Europe</p>
-                      </div>
-                      <div class="verification-badge">
-                        <span><img src="imgs/Approval.png" alt="" /> Verified Buyer</span>
+                      <h4 class="wander-testimonial-heading mb-3">Super easy and worked well</h4>
+                      <p class="testimonial-para">
+                        Took me just a few mins to setup and way cheaper than Airalo - my friends
+                        and I had really good network on our Euro trip
+                      </p>
+                      <div class="testimonial-client-deatails d-flex mt-3">
+                        <div class="testimonial-dp me-2">
+                          <img class="img-fluid" src="imgs/testimonial-img.png" alt="" />
+                        </div>
+                        <div>
+                          <div class="testimonial-name me-2">Rachel Hughes</div>
+                          <p class="testimonial-plan"><b>Plan:</b> Europe</p>
+                        </div>
+                        <div class="verification-badge">
+                          <span><img src="imgs/Approval.png" alt="" /> Verified Buyer</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="wander-testimonial-card">
-                    <div class="testimonial-stars mb-4">
-                      <img class="img-fluid" src="imgs/Stars.svg" alt="" />
+                    <div class="wander-testimonial-card">
+                      <div class="testimonial-stars mb-4">
+                        <img class="img-fluid" src="imgs/Stars.svg" alt="" />
+                      </div>
+                      <h4 class="wander-testimonial-heading mb-3">Super easy and worked well</h4>
+                      <p class="testimonial-para">
+                        Took me just a few mins to setup and way cheaper than Airalo - my friends
+                        and I had really good network on our Euro trip
+                      </p>
+                      <div class="testimonial-client-deatails d-flex mt-3">
+                        <div class="testimonial-dp me-2">
+                          <img class="img-fluid" src="imgs/testimonial-img.png" alt="" />
+                        </div>
+                        <div>
+                          <div class="testimonial-name me-2">Rachel Hughes</div>
+                          <p class="testimonial-plan"><b>Plan:</b> Europe</p>
+                        </div>
+                        <div class="verification-badge">
+                          <span><img src="imgs/Approval.png" alt="" /> Verified Buyer</span>
+                        </div>
+                      </div>
                     </div>
-                    <h4 class="wander-testimonial-heading mb-3">Super easy and worked well</h4>
-                    <p class="testimonial-para">
-                      Took me just a few mins to setup and way cheaper than Airalo - my friends and
-                      I had really good network on our Euro trip
-                    </p>
-                    <div class="testimonial-client-deatails d-flex mt-3">
-                      <div class="testimonial-dp me-2">
-                        <img class="img-fluid" src="imgs/testimonial-img.png" alt="" />
+                    <div class="wander-testimonial-card">
+                      <div class="testimonial-stars mb-4">
+                        <img class="img-fluid" src="imgs/Stars.svg" alt="" />
                       </div>
-                      <div>
-                        <div class="testimonial-name me-2">Rachel Hughes</div>
-                        <p class="testimonial-plan"><b>Plan:</b> Europe</p>
-                      </div>
-                      <div class="verification-badge">
-                        <span><img src="imgs/Approval.png" alt="" /> Verified Buyer</span>
+                      <h4 class="wander-testimonial-heading mb-3">Super easy and worked well</h4>
+                      <p class="testimonial-para">
+                        Took me just a few mins to setup and way cheaper than Airalo - my friends
+                        and I had really good network on our Euro trip
+                      </p>
+                      <div class="testimonial-client-deatails d-flex mt-3">
+                        <div class="testimonial-dp me-2">
+                          <img class="img-fluid" src="imgs/testimonial-img.png" alt="" />
+                        </div>
+                        <div>
+                          <div class="testimonial-name me-2">Rachel Hughes</div>
+                          <p class="testimonial-plan"><b>Plan:</b> Europe</p>
+                        </div>
+                        <div class="verification-badge">
+                          <span><img src="imgs/Approval.png" alt="" /> Verified Buyer</span>
+                        </div>
                       </div>
                     </div>
                   </div>
