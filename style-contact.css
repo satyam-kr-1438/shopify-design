@@ -1,0 +1,120 @@
+.contact-form-section {
+  padding-top: 12rem;
+}
+
+.wander-contact-details {
+  position: relative;
+  border-radius: 20px;
+  background: radial-gradient(
+      149.68% 112.68% at 59.33% 77.8%,
+      #fdd77f 0%,
+      #cbf3f0 55.5%,
+      #75e8de 100%
+    ),
+    #fff;
+  padding: 3rem;
+  height: 100%;
+}
+
+.wander-contact-form {
+  margin: 2rem 2rem 0 2rem;
+}
+
+.wander-contact-form form label {
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #252525;
+  margin-bottom: 0;
+}
+
+.wander-contact-form form input {
+  border: none;
+  border-bottom: 1px solid rgba(37, 37, 37, 0.5);
+  border-radius: 0;
+  padding-left: 0;
+  &::placeholder {
+    color: #8d8d8d;
+    font-size: 14px;
+  }
+}
+
+.wander-contact-form form textarea {
+  border: none;
+  border-bottom: 1px solid rgba(37, 37, 37, 0.5);
+  border-radius: 0;
+  padding-left: 0;
+  resize: none;
+  &::placeholder {
+    color: #252525;
+    font-size: 14px;
+  }
+}
+
+.wander-contact-form .form-btn-submit {
+  text-align: right;
+}
+
+.wander-contact-form .form-check {
+  margin-right: 2.5rem;
+}
+
+.wander-contact-form form .form-check-input {
+  background-color: #d7d7d7;
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 1em;
+  &:checked {
+    background-color: #ff9500;
+  }
+  &[type="checkbox"] {
+    border-radius: 1rem;
+    border: none;
+  }
+}
+
+.w-contact-tag a {
+  text-decoration: none;
+  color: #000;
+  display: inline-flex;
+  padding: 14px 20px;
+  align-items: center;
+  gap: 14px;
+  border-radius: 16px;
+  border: 1px solid var(--Color-Neutral-black, #000);
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.w-contact-tag span img {
+  width: 16px;
+}
+
+.form-contact-img {
+  position: absolute;
+  bottom: 12px;
+  right: 26px;
+  text-align: right;
+}
+
+.form-contact-img img {
+  width: 50%;
+}
+
+/* media query */
+
+@media (max-width: 575.98px) {
+  .contact-form-section {
+    padding-top: 8rem;
+  }
+
+  .wander-contact-form {
+    margin: 4rem 0 0 0;
+  }
+
+  .form-btn-submit button {
+    width: 100%;
+  }
+}
