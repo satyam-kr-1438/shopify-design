@@ -5,15 +5,21 @@
 }
 
 @font-face {
-  font-family: myHelvetica-Regular;
-  font-weight: bold;
-  src: url("HelveticaNeue.ttc") format("truetype");
+  font-family: Helvetica-font;
+  font-weight: 400;
+  src: url("fonts/HelveticaNeueRoman.otf") format("opentype");
 }
 
 @font-face {
-  font-family: myfont;
-  font-weight: bold;
-  src: url("that-font-I-like-Regular.woff") format("WOFF");
+  font-family: Helvetica-font;
+  font-weight: 500;
+  src: url("fonts/HelveticaNeueMedium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Helvetica-font;
+  font-weight: 600;
+  src: url("fonts/HelveticaNeueBold.otf") format("opentype");
 }
 
 html {
@@ -45,10 +51,9 @@ section .container-fluid {
 }
 
 .wander-paraStyle {
-  font-family: myHelvetica-Regular;
+  font-family: Helvetica-font;
   font-size: 1rem;
   color: rgba(0, 0, 0, 0.5);
-  width: 90%;
 }
 
 .orangeText {
@@ -962,7 +967,14 @@ li.local-detination-item a {
   height: 630px;
   padding: 4rem 5rem;
   border-radius: 40px;
-  background: linear-gradient(#ffd980 0%, #facb5e 29%, #c4f9f5 61%, #6bd3c9 99%);
+  background: linear-gradient(
+      129deg,
+      #ffd980 -23.61%,
+      #facb5e 27.04%,
+      #c4f9f5 82.57%,
+      #6bd3c9 147.33%
+    ),
+    #141414;
 }
 
 .newsletter-input-box {
@@ -1757,10 +1769,15 @@ footer .container-fluid {
   content: none;
 }
 
-.search-popup .search-popup-item {
+.search-popup .search-popup-item a {
   display: flex;
   column-gap: 1rem;
   align-items: center;
+  text-decoration: none;
+  color: #000;
+}
+
+.search-popup .search-popup-item {
   position: relative;
   padding: 1rem 0.6rem;
   margin: 1.2rem 0 0.4rem 0;
