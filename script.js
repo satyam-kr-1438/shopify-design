@@ -257,4 +257,28 @@ $(document).ready(function () {
   $(".search-popup").on("mousedown", function (event) {
     event.preventDefault(); // Prevent the blur event from firing
   });
+
+  // product listing page js
+  $(".plan-data-row .data-tag").on("click", function (event) {
+    event.preventDefault(); // Prevent the default anchor behavior
+    var type = $(this).data("type");
+
+    if (type === "unlimited") {
+      $(".unlimited-data-row").show();
+    } else {
+      $(".unlimited-data-row").hide();
+    }
+
+    $(".plan-data-row .data-tag").removeClass("active");
+    $(this).addClass("active");
+  });
+  $(".plan-validity-row .validity-tag").on("click", function (event) {
+    event.preventDefault(); // Prevent the default anchor behavior
+
+    // Remove the active class from all validity tags
+    $(".plan-validity-row .validity-tag").removeClass("active");
+
+    // Add the active class to the clicked validity tag
+    $(this).addClass("active");
+  });
 });
