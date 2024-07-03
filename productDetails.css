@@ -230,3 +230,158 @@
     white-space: nowrap;
   }
 }
+
+/* additional css */
+
+.product-details-section .toggle-btn-outline {
+  gap: 0.6rem;
+}
+
+.product-toggle-btn {
+  background: #fff;
+  padding: 8px 36px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
+  color: #666666;
+  &.active {
+    background: #ff9500;
+    border: none;
+    color: #fff;
+  }
+}
+
+.toggle-content-box {
+  padding: 2rem 1rem 1rem 0.2rem;
+}
+
+.tg-product-features-ul {
+  padding: 0;
+}
+
+.tg-product-feature-item {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.tg-product-techSpecs-item {
+  margin-bottom: 1rem;
+}
+
+.tg-product-feature-item img {
+  width: 16px;
+}
+
+.tg-product-features,
+.tg-product-techSpecs {
+  display: none;
+}
+
+.pdp-slider-section {
+  padding: 6rem 0;
+}
+
+.pdp-slide {
+  position: relative;
+  overflow: hidden;
+  border-radius: 40px;
+  padding: 4rem 12rem 0 12rem;
+  margin: 1rem;
+}
+
+.pdp-slider .stack-img-main {
+  display: flex;
+  justify-content: center;
+}
+
+.pdp-slider .stack-img-main img {
+  margin-top: 1rem;
+}
+
+.pdp-testimonial-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.pdp-testimonial {
+  border-radius: 20px;
+  background: #fff6ea;
+  padding: 2rem;
+  display: inline-flex;
+  gap: 2rem;
+  width: 48%;
+}
+
+.pdp-test-name {
+  color: #252525;
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.pdp-test-dp img {
+  width: 24px;
+}
+
+.pdp-test-location {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: Helvetica-font;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.pdp-test-summary {
+  color: #252525;
+  font-family: Manrope;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.4px;
+}
+
+.pdp-test-text {
+  color: #252525;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+.pdp-test-rating img {
+  width: 100px;
+}
+
+.mobile-testimonial-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (max-width: 575.98px) {
+  .product-toggle-btn {
+    padding: 8px 24px;
+    border-radius: 12px;
+    font-size: 1rem;
+  }
+  .product-details-section .toggle-btn-outline {
+    border-radius: 16px;
+  }
+
+  .pdp-slide {
+    padding: 3rem 4rem 0 4rem;
+    margin: 1rem 0;
+  }
+  .pdp-testimonial {
+    min-width: 100%;
+  }
+  .pdp-testimonial-box {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    justify-content: space-between;
+    overflow-x: scroll;
+  }
+}

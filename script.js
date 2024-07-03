@@ -281,4 +281,21 @@ $(document).ready(function () {
     // Add the active class to the clicked validity tag
     $(this).addClass("active");
   });
+
+  // pdp slider
+  $(".pdp-slider").slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    dots: true,
+    focusOnSelect: true,
+    infinite: true,
+    nextArrow: ".wander-next",
+    prevArrow: ".wander-prev",
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: "unslick",
+      },
+    ],
+  });
 });
