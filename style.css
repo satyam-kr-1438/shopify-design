@@ -854,7 +854,7 @@ li.local-detination-item a {
   max-width: 180px;
 }
 
-.accordion-item:first-of-type .accordion-button {
+/* .accordion-item:first-of-type .accordion-button {
   border-radius: 0;
 }
 
@@ -910,7 +910,7 @@ li.local-detination-item a {
 
 .wander-accordian {
   width: 90%;
-}
+} */
 
 /* commitment section */
 
@@ -1412,7 +1412,7 @@ footer .container-fluid {
   }
 
   /* faq section */
-  .wander-accordian {
+  /* .wander-accordian {
     width: 100%;
   }
 
@@ -1421,7 +1421,7 @@ footer .container-fluid {
     max-width: 200px;
     margin-left: auto;
     margin-right: auto;
-  }
+  } */
 
   /* commitment section */
 
@@ -1835,4 +1835,141 @@ footer .container-fluid {
   font-family: "Manrope", sans-serif;
   font-size: 1.2rem;
   font-weight: 500;
+}
+
+/* additional css new - faq section */
+
+.faq-section-tabs-ul {
+  list-style: none;
+  padding: 0;
+}
+
+.faq-tab-item {
+  border-radius: 16px;
+  padding: 1.5rem 2rem;
+  margin: 0.2rem 0;
+  &.active {
+    border: 2px solid #ff9500;
+    background: #f6f6f6;
+  }
+  &:hover {
+    background: #f3f3f3;
+    cursor: pointer;
+  }
+}
+
+.faq-tab-item .faq-tab-link {
+  text-decoration: none;
+  color: #252525;
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.4px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.accordion-item:first-of-type .accordion-button {
+  border-radius: 12px;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #252525;
+  background: transparent;
+  box-shadow: none;
+  padding: 1.5rem;
+}
+
+.accordion-button {
+  padding: 1.5rem;
+  font-size: 20px;
+  color: #252525;
+  font-family: Helvetica-font;
+  font-weight: 400;
+  border-radius: 12px;
+}
+
+.accordion-item {
+  border: 1px solid #252525;
+  margin: 1rem 0;
+  &.open {
+    box-shadow: 0 0 0 2px #ff9500;
+    background: #f2f2f2;
+    border-color: transparent;
+  }
+}
+
+.accordion-item:not(:first-of-type) {
+  border-top: 1px solid #252525;
+  border-radius: 12px;
+  &.open {
+    box-shadow: 0 0 0 2px #ff9500;
+    border-color: transparent;
+  }
+}
+
+.accordion-item:first-of-type {
+  border-radius: 12px;
+  margin-top: 0.2rem;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color: transparent;
+  outline: 0;
+  box-shadow: none;
+}
+
+.accordion-item:first-of-type .accordion-button {
+  font-size: 20px;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+  border-radius: 12px;
+}
+
+.accordion-body {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  color: #000;
+  font-family: Helvetica-font;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(imgs/substract.svg);
+  background-size: 16px;
+  margin-top: auto;
+}
+
+.accordion-button::after {
+  background-image: url(imgs/add.svg);
+  width: 16px;
+  height: 16px;
+  background-size: 15px;
+}
+
+.accordion-button:not(.collapsed)::after {
+  transform: rotateY(180deg);
+}
+
+.accordion-item:last-of-type {
+  border-radius: 12px;
+}
+
+.wander-accordian {
+  width: 90%;
+}
+
+@media (max-width: 575.98px) {
+  .wander-accordian {
+    width: 100%;
+  }
+  .wander-faq-mobile-btn {
+    margin-top: 4rem;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

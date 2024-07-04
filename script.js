@@ -293,9 +293,26 @@ $(document).ready(function () {
     prevArrow: ".wander-prev",
     responsive: [
       {
-        breakpoint: 1000,
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 992,
         settings: "unslick",
       },
     ],
+  });
+
+  $(".accordion-item").on("show.bs.collapse", function () {
+    $(this).addClass("open");
+  });
+
+  $(".accordion-item").on("hide.bs.collapse", function () {
+    $(this).removeClass("open");
   });
 });

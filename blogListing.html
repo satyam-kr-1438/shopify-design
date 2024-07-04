@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <!-- slick slider -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="slick-theme.css" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-search-destinations.css" />
+    <link rel="stylesheet" href="productDetails.css" />
+    <link rel="stylesheet" href="blogListing.css" />
+  </head>
+  <body>
+    <!-- header -->
+
+    <header class="wander-header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid wander-header-container">
+          <a class="navbar-brand" href="#"
+            ><div class="wander-header-logo">
+              <div class="wander-header-logo-icon">
+                <img class="img-fluid" src="imgs/logo-icon-without-niddle.svg" alt="" />
+                <span class="logo-niddle"
+                  ><img class="img-fluid" src="imgs/logo-icon-niddle.svg" alt=""
+                /></span>
+              </div>
+              <div class="wander-logo-name">
+                <img class="img-fluid" src="imgs/wander-name-logo.svg" alt="" />
+              </div></div
+          ></a>
+          <div>
+            <button class="header-search-mobile btn d-inline-block d-lg-none">
+              <img src="imgs/search-black.svg" alt="" />
+            </button>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarScroll"
+              aria-controls="navbarScroll"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <div class="wander-search-input position-relative d-block d-lg-none">
+              <input
+                type="search"
+                placeholder="Where are you wandering off to?"
+                class="form-control form-control-lg searchInputStyle" />
+              <span class="position-absolute search-input-destination-icon"
+                ><img class="img-fluid" src="imgs/distance.svg" alt="destination icon"
+              /></span>
+              <span class="position-absolute search-input-search-icon"
+                ><img src="imgs/search.svg" alt="search icon" class="img-fluid" />
+              </span>
+            </div>
+            <ul
+              class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll"
+              style="--bs-scroll-height: 100x">
+              <li class="nav-item dropdown wander-dropdown-item">
+                <a
+                  class="nav-link dropdown-toggle show"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  data-bs-auto-close="false"
+                  aria-expanded="false">
+                  Destinations
+                </a>
+                <div class="dropdown-menu wander-destination-dropdown p-0" data-bs-popper="static">
+                  <div class="dropdown-container">
+                    <div class="row">
+                      <div class="col-12 col-lg-3">
+                        <div class="dropdown-destination-box">
+                          <div class="dropdown-local-destinations">
+                            <div class="local-destination-btn-box local-box active">
+                              <button class="btn local-destionation-btn btn-local">
+                                <span class="me-3"
+                                  ><img class="img-fluid" src="imgs/distance.svg" alt=""
+                                /></span>
+                                Local
+                              </button>
+                              <ul class="local-dest-ul">
+                                <li class="dest-info-text pb-3">Popular Destinations</li>
+                                <li class="local-detination-item"><a href="">United States</a></li>
+                                <li class="local-detination-item"><a href="">UAE</a></li>
+                                <li class="local-detination-item"><a href="">United Kingdom</a></li>
+                                <li class="local-detination-item"><a href="">United States</a></li>
+                                <li class="local-detination-item"><a href="">United States</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="dropdown-regional-destinations">
+                            <div class="local-destination-btn-box region-box">
+                              <button class="btn local-destionation-btn btn-region">
+                                <span class="me-3"
+                                  ><img class="img-fluid" src="imgs/distance.svg" alt=""
+                                /></span>
+                                Regional
+                              </button>
+                              <ul class="local-dest-ul">
+                                <li class="local-detination-item"><a href="">Americas</a></li>
+                                <li class="local-detination-item"><a href="">Asia Pacific</a></li>
+                                <li class="local-detination-item"><a href="">Europe</a></li>
+                                <li class="local-detination-item"><a href="">Middle-East</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="dropdown-see-all-btn text-center mt-3 d-block d-lg-none">
+                            <button class="btn wander-btn-outlined">See all destinations</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-6 d-none d-lg-block">
+                        <div class="dropdown-middle-box">
+                          <div class="dropdown-country-filter-row">
+                            <ul class="country-filter-ul">
+                              <li class="country-filter-name">Country</li>
+                              <li class="country-filter-tag"><a href="">A-B</a></li>
+                              <li class="country-filter-tag"><a href="">C-E</a></li>
+                              <li class="country-filter-tag"><a href="">F-H</a></li>
+                              <li class="country-filter-tag"><a href="">I-Z</a></li>
+                            </ul>
+                          </div>
+                          <div class="dropdown-country-names-row">
+                            <ul class="dropdonw-country-names-ul">
+                              <li class="country-name-item">
+                                <a href=""
+                                  ><span class="dropdown-country-flag-icon"
+                                    ><img
+                                      src="imgs/country-flag-icon.svg"
+                                      alt=""
+                                      class="img-fluid" /></span
+                                  >United States</a
+                                >
+                              </li>
+                              <li class="country-name-item">
+                                <a href=""
+                                  ><span class="dropdown-country-flag-icon"
+                                    ><img
+                                      src="imgs/country-flag-icon.svg"
+                                      alt=""
+                                      class="img-fluid" /></span
+                                  >United Arab Emirates</a
+                                >
+                              </li>
+                              <li class="country-name-item">
+                                <a href=""
+                                  ><span class="dropdown-country-flag-icon"
+                                    ><img
+                                      src="imgs/country-flag-icon.svg"
+                                      alt=""
+                                      class="img-fluid" /></span
+                                  >Switzerlands</a
+                                >
+                              </li>
+                              <li class="country-name-item">
+                                <a href=""
+                                  ><span class="dropdown-country-flag-icon"
+                                    ><img
+                                      src="imgs/country-flag-icon.svg"
+                                      alt=""
+                                      class="img-fluid" /></span
+                                  >Singapore</a
+                                >
+                              </li>
+                              <li class="country-name-item">
+                                <a href=""
+                                  ><span class="dropdown-country-flag-icon"
+                                    ><img
+                                      src="imgs/country-flag-icon.svg"
+                                      alt=""
+                                      class="img-fluid" /></span
+                                  >Germany</a
+                                >
+                              </li>
+                              <li class="country-name-item">
+                                <a href=""
+                                  ><span class="dropdown-country-flag-icon"
+                                    ><img
+                                      src="imgs/country-flag-icon.svg"
+                                      alt=""
+                                      class="img-fluid" /></span
+                                  >Argentina</a
+                                >
+                              </li>
+                              <li class="country-name-item">
+                                <a href=""
+                                  ><span class="dropdown-country-flag-icon"
+                                    ><img
+                                      src="imgs/country-flag-icon.svg"
+                                      alt=""
+                                      class="img-fluid" /></span
+                                  >United States</a
+                                >
+                              </li>
+                              <li class="country-name-item">
+                                <a href=""
+                                  ><span class="dropdown-country-flag-icon"
+                                    ><img
+                                      src="imgs/country-flag-icon.svg"
+                                      alt=""
+                                      class="img-fluid" /></span
+                                  >United Arab Emirates</a
+                                >
+                              </li>
+                              <li class="country-name-item">
+                                <a href=""
+                                  ><span class="dropdown-country-flag-icon"
+                                    ><img
+                                      src="imgs/country-flag-icon.svg"
+                                      alt=""
+                                      class="img-fluid" /></span
+                                  >Switzerlands</a
+                                >
+                              </li>
+                              <li class="country-name-item">
+                                <a href=""
+                                  ><span class="dropdown-country-flag-icon"
+                                    ><img
+                                      src="imgs/country-flag-icon.svg"
+                                      alt=""
+                                      class="img-fluid" /></span
+                                  >Singapore</a
+                                >
+                              </li>
+                              <li class="country-name-item">
+                                <a href=""
+                                  ><span class="dropdown-country-flag-icon"
+                                    ><img
+                                      src="imgs/country-flag-icon.svg"
+                                      alt=""
+                                      class="img-fluid" /></span
+                                  >Germany</a
+                                >
+                              </li>
+                              <li class="country-name-item">
+                                <a href=""
+                                  ><span class="dropdown-country-flag-icon"
+                                    ><img
+                                      src="imgs/country-flag-icon.svg"
+                                      alt=""
+                                      class="img-fluid" /></span
+                                  >Argentina</a
+                                >
+                              </li>
+                              <li class="country-name-item">
+                                <a href=""
+                                  ><span class="dropdown-country-flag-icon"
+                                    ><img
+                                      src="imgs/country-flag-icon.svg"
+                                      alt=""
+                                      class="img-fluid" /></span
+                                  >United States</a
+                                >
+                              </li>
+                              <li class="country-name-item">
+                                <a href=""
+                                  ><span class="dropdown-country-flag-icon"
+                                    ><img
+                                      src="imgs/country-flag-icon.svg"
+                                      alt=""
+                                      class="img-fluid" /></span
+                                  >United Arab Emirates</a
+                                >
+                              </li>
+                              <li class="country-name-item">
+                                <a href=""
+                                  ><span class="dropdown-country-flag-icon"
+                                    ><img
+                                      src="imgs/country-flag-icon.svg"
+                                      alt=""
+                                      class="img-fluid" /></span
+                                  >Switzerlands</a
+                                >
+                              </li>
+                              <li class="country-name-item">
+                                <a href=""
+                                  ><span class="dropdown-country-flag-icon"
+                                    ><img
+                                      src="imgs/country-flag-icon.svg"
+                                      alt=""
+                                      class="img-fluid" /></span
+                                  >Singapore</a
+                                >
+                              </li>
+                              <li class="country-name-item">
+                                <a href=""
+                                  ><span class="dropdown-country-flag-icon"
+                                    ><img
+                                      src="imgs/country-flag-icon.svg"
+                                      alt=""
+                                      class="img-fluid" /></span
+                                  >Germany</a
+                                >
+                              </li>
+                              <li class="country-name-item">
+                                <a href=""
+                                  ><span class="dropdown-country-flag-icon"
+                                    ><img
+                                      src="imgs/country-flag-icon.svg"
+                                      alt=""
+                                      class="img-fluid" /></span
+                                  >Argentina</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+
+                          <div class="dropdown-see-all-btn text-center mt-5">
+                            <button class="btn wander-btn-outlined w-50">
+                              See all destinations
+                            </button>
+                          </div>
+                        </div>
+                        <div class="dropdown-middle-box-regional">
+                          <div class="dropdown-regional-heading">
+                            <span>Regions</span>
+                          </div>
+                          <div class="dropdown-regional-names-row">
+                            <ul class="dropdown-regional-maps-ul">
+                              <li class="regional-name-item">
+                                <a href=""
+                                  ><div
+                                    class="dropdown-regional-bg"
+                                    style="
+                                      background-image: url('imgs/Caucasus.svg');
+                                      background-size: contain;
+                                    "></div>
+                                  <span class="dropdown-regional-text"> Caucasus </span></a
+                                >
+                              </li>
+                              <li class="regional-name-item">
+                                <a href=""
+                                  ><div
+                                    class="dropdown-regional-bg"
+                                    style="
+                                      background-image: url('imgs/Oceania.svg');
+                                      background-size: cover;
+                                    ">
+                                    >
+                                  </div>
+                                  <span class="dropdown-regional-text"> Oceania </span></a
+                                >
+                              </li>
+                              <li class="regional-name-item">
+                                <a href=""
+                                  ><div
+                                    class="dropdown-regional-bg"
+                                    style="
+                                      background-image: url('imgs/Latin\ America.svg');
+                                      background-size: contain;
+                                    "></div>
+                                  <span class="dropdown-regional-text"> Latin America </span></a
+                                >
+                              </li>
+                              <li class="regional-name-item">
+                                <a href=""
+                                  ><div
+                                    class="dropdown-regional-bg"
+                                    style="
+                                      background-image: url('imgs/caribbean.svg');
+                                      background-size: cover;
+                                    "></div>
+                                  <span class="dropdown-regional-text"> Caribbean</span></a
+                                >
+                              </li>
+                              <li class="regional-name-item">
+                                <a href=""
+                                  ><div
+                                    class="dropdown-regional-bg"
+                                    style="
+                                      background-image: url('imgs/Asia\ p_1\ 1.svg');
+                                      background-size: cover;
+                                    "></div>
+                                  <span class="dropdown-regional-text"> Asia Pacific </span></a
+                                >
+                              </li>
+                              <li class="regional-name-item">
+                                <a href=""
+                                  ><div
+                                    class="dropdown-regional-bg"
+                                    style="
+                                      background-image: url('imgs/balkans.svg');
+                                      background-size: cover;
+                                    "></div>
+                                  <span class="dropdown-regional-text"> Balkans </span></a
+                                >
+                              </li>
+                              <li class="regional-name-item">
+                                <a href=""
+                                  ><div
+                                    class="dropdown-regional-bg"
+                                    style="
+                                      background-image: url('imgs/Europe.svg');
+                                      background-size: contain;
+                                    "></div>
+                                  <span class="dropdown-regional-text"> Europe </span></a
+                                >
+                              </li>
+                              <li class="regional-name-item">
+                                <a href=""
+                                  ><div
+                                    class="dropdown-regional-bg"
+                                    style="
+                                      background-image: url('imgs/middle-east.svg');
+                                      background-size: contain;
+                                    "></div>
+                                  <span class="dropdown-regional-text"> Middle East </span></a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-3 d-none d-lg-block">
+                        <div class="dropdown-right dropdown-right-feature">
+                          <ul class="dropdown-feature-ul">
+                            <li class="dropdown-feature-item">
+                              <div class="dropdown-feature-icon">
+                                <img class="img-fluid" src="imgs/lightning_stand.svg" alt="" />
+                              </div>
+                              <div class="dropdown-feature-title">Instant Activation</div>
+                            </li>
+                            <li class="dropdown-feature-item">
+                              <div class="dropdown-feature-icon">
+                                <img class="img-fluid" src="imgs/lightning_stand.svg" alt="" />
+                              </div>
+                              <div class="dropdown-feature-title">High Internet Speeds</div>
+                            </li>
+                            <li class="dropdown-feature-item">
+                              <div class="dropdown-feature-icon">
+                                <img class="img-fluid" src="imgs/lightning_stand.svg" alt="" />
+                              </div>
+                              <div class="dropdown-feature-title">Hotspot Sharing</div>
+                            </li>
+                            <li class="dropdown-feature-item">
+                              <div class="dropdown-feature-icon">
+                                <img class="img-fluid" src="imgs/lightning_stand.svg" alt="" />
+                              </div>
+                              <div class="dropdown-feature-title">No Hidden Charges</div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="dropdown-right-card dropdown-right">
+                          <div class="wander-destination-card-box">
+                            <div class="wander-destination-card position-relative">
+                              <div class="dest-card-corner-img position-absolute">
+                                <img src="imgs/flag.png" alt="" />
+                              </div>
+                              <div class="destination-card-img">
+                                <img src="imgs/unitedImg.png" alt="" />
+                              </div>
+                              <div class="destination-card-content">
+                                <div class="dest-card-heading">United States</div>
+                                <div
+                                  class="dest-card-specification d-flex justify-content-between align-items-end">
+                                  <div class="d-flex flex-column">
+                                    <span class="price-from-text">From</span>
+                                    <span class="dest-card-price">$30</span>
+                                  </div>
+                                  <div class="signal">
+                                    <img src="/imgs/signal.svg" alt="" />
+                                    <span class="network-type">5G</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="dest-card-button text-center">
+                                <button class="btn">Select Plan</button>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="mb-2 dropdown-right-feature-list">
+                              <span class="me-2"><img src="imgs/right-done.svg" alt="" /></span
+                              ><span>32 plan options available</span>
+                            </div>
+                            <div class="mb-2 dropdown-right-feature-list">
+                              <span class="me-2"><img src="imgs/right-done.svg" alt="" /></span
+                              ><span>5G and hotspot-enabled</span>
+                            </div>
+                            <div class="mb-2 dropdown-right-feature-list">
+                              <span class="me-2"><img src="imgs/right-done.svg" alt="" /></span
+                              ><span>Activation within 2 mins</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="dropdown-right-card-region dropdown-right">
+                          <div class="wander-destination-card-box">
+                            <div class="wander-destination-card">
+                              <div class="destination-card-img">
+                                <img src="imgs/unitedImg.png" alt="" />
+                              </div>
+                              <div class="destination-card-content">
+                                <div class="dest-card-heading">United States</div>
+                                <div
+                                  class="dest-card-specification d-flex justify-content-between align-items-end">
+                                  <div class="d-flex flex-column">
+                                    <span class="price-from-text">From</span>
+                                    <span class="dest-card-price">$30</span>
+                                  </div>
+                                  <div class="signal">
+                                    <img src="/imgs/signal.svg" alt="" />
+                                    <span class="network-type">5G</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="dest-card-button text-center">
+                                <button class="btn">Select Plan</button>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="mb-2 dropdown-right-feature-list">
+                              <span class="me-2"><img src="imgs/right-done.svg" alt="" /></span
+                              ><span>32 plan options available</span>
+                            </div>
+                            <div class="mb-2 dropdown-right-feature-list">
+                              <span class="me-2"><img src="imgs/right-done.svg" alt="" /></span
+                              ><span>5G and hotspot-enabled</span>
+                            </div>
+                            <div class="mb-2 dropdown-right-feature-list">
+                              <span class="me-2"><img src="imgs/right-done.svg" alt="" /></span
+                              ><span>Activation within 2 mins</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul> -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Our Story</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">How it workds</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link">FAQs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Contact Us</a>
+              </li>
+            </ul>
+
+            <div class="d-flex wander-header-right d-none d-lg-flex">
+              <select class="form-select wander-header-select" aria-label=".form-select-lg example">
+                <option selected>EN-USD($)</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <button class="header-search-btn btn">
+                <img src="imgs/search-black.svg" alt="" />
+              </button>
+              <button class="header-admin-btn btn">
+                <img src="imgs/admin-black.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- wander-blog-top-section -->
+    <section class="blog-top-section position-relative">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-4">
+            <div class="blog-main-content-box">
+              <h2 class="wander-headingStyle mb-4">The Wander Blog</h2>
+              <p class="wander-paraStyle mb-5">
+                Purchase the best prepaid eSIMs online for your travels and enjoy instant internet
+                connectivity.
+              </p>
+              <div class="blog-tag-box">
+                <p class="wander-paraStyle mb-2">Check out</p>
+                <div class="blog-tag-row">
+                  <span class="blog-tag">Latest Articles</span
+                  ><span class="blog-tag">Trending Topics</span
+                  ><span class="blog-tag">Spotlights</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-8">
+            <div class="main-blogs-row">
+              <div class="blog-card">
+                <div class="blog-img">
+                  <img class="img-fluid" src="imgs/product-detail-img.png" alt="" />
+                </div>
+                <div class="blog-category-tag-row">
+                  <span class="blog-category-tag">Lorem Ipsum</span>
+                  <span class="blog-category-tag">Lorem Ipsum</span>
+                </div>
+                <h3 class="wander-blog-heading">Lorem ipsum dolor sit amet</h3>
+                <p class="wander-blog-para">
+                  Select according to destination, duration and how much data you need. Use DATA
+                  CALCULATOR so that you don’t buy more than you.
+                </p>
+                <div class="blog-owner">
+                  <span class="blog-owner-dp"><img src="imgs/testimonial-dp.png" alt="" /></span>
+                  <span class="blog-owner-name">Sanjog</span>
+                </div>
+              </div>
+              <div class="blog-card">
+                <div class="blog-img">
+                  <img class="img-fluid" src="imgs/product-detail-img.png" alt="" />
+                </div>
+                <div class="blog-category-tag-row">
+                  <span class="blog-category-tag">Lorem Ipsum</span>
+                  <span class="blog-category-tag">Lorem Ipsum</span>
+                </div>
+                <h3 class="wander-blog-heading">Lorem ipsum dolor sit amet</h3>
+                <p class="wander-blog-para">
+                  Select according to destination, duration and how much data you need. Use DATA
+                  CALCULATOR so that you don’t buy more than you.
+                </p>
+                <div class="blog-owner">
+                  <span class="blog-owner-dp"><img src="imgs/testimonial-dp.png" alt="" /></span>
+                  <span class="blog-owner-name">Sanjog</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="overlay-4">{""}</div>
+    </section>
+
+    <!-- blog category filter row -->
+
+    <section class="blog-category-section">
+      <div class="container-fluid">
+        <div class="row">
+          <p class="wander-small-heading mb-4">Filter by:</p>
+          <div class="blog-filter-row">
+            <span class="blog-filter-tag">Lorem Ipsum</span>
+            <span class="blog-filter-tag">Lorem Ipsum</span>
+            <span class="blog-filter-tag">Lorem Ipsum</span>
+            <span class="blog-filter-tag">Lorem Ipsum</span>
+            <span class="blog-filter-tag">Lorem Ipsum</span>
+            <span class="blog-filter-tag">Lorem Ipsum</span>
+            <span class="blog-filter-tag">Lorem Ipsum</span>
+            <span class="blog-filter-tag">Lorem Ipsum</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- slick slider -->
+    <script
+      defer="defer"
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- GSAP Library -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <!-- custom js -->
+    <script src="script.js"></script>
+  </body>
+</html>
