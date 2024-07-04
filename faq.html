@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <!-- slick slider -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="slick-theme.css" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-search-destinations.css" />
+    <link rel="stylesheet" href="style-contact.css" />
+  </head>
+  <body>
+    <!-- header -->
+
+    <header class="wander-header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid wander-header-container">
+          <a class="navbar-brand" href="#"
+            ><div class="wander-header-logo">
+              <div class="wander-header-logo-icon">
+                <img class="img-fluid" src="imgs/logo-icon-without-niddle.svg" alt="" />
+                <span class="logo-niddle"
+                  ><img class="img-fluid" src="imgs/logo-icon-niddle.svg" alt=""
+                /></span>
+              </div>
+              <div class="wander-logo-name">
+                <img class="img-fluid" src="imgs/wander-name-logo.svg" alt="" />
+              </div></div
+          ></a>
+          <div>
+            <button class="header-search-mobile btn d-inline-block d-lg-none">
+              <img src="imgs/search-black.svg" alt="" />
+            </button>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarScroll"
+              aria-controls="navbarScroll"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <div class="wander-search-input position-relative d-block d-lg-none">
+              <input
+                type="search"
+                placeholder="Where are you wandering off to?"
+                class="form-control form-control-lg searchInputStyle" />
+              <span class="position-absolute search-input-destination-icon"
+                ><img class="img-fluid" src="imgs/distance.svg" alt="destination icon"
+              /></span>
+              <span class="position-absolute search-input-search-icon"
+                ><img src="imgs/search.svg" alt="search icon" class="img-fluid" />
+              </span>
+            </div>
+            <ul
+              class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll"
+              style="--bs-scroll-height: 100x">
+              <li class="nav-item dropdown wander-dropdown-item">
+                <a
+                  class="nav-link dropdown-toggle show"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  data-bs-auto-close="false"
+                  aria-expanded="false">
+                  Destinations
+                </a>
+                <div class="dropdown-menu wander-destination-dropdown p-0" data-bs-popper="static">
+                  <div class="dropdown-container">
+                    <div class="row">
+                      <div class="col-12 col-lg-3">
+                        <div class="dropdown-destination-box">
+                          <div class="dropdown-local-destinations">
+                            <div class="local-destination-btn-box local-box active">
+                              <button class="btn local-destionation-btn btn-local">
+                                <span class="me-3"
+                                  ><img class="img-fluid" src="imgs/distance.svg" alt=""
+                                /></span>
+                                Local
+                              </button>
+                              <ul class="local-dest-ul">
+                                <li class="dest-info-text pb-3">Popular Destinations</li>
+                                <li class="local-detination-item"><a href="">United States</a></li>
+                                <li class="local-detination-item"><a href="">UAE</a></li>
+                                <li class="local-detination-item"><a href="">United Kingdom</a></li>
+                                <li class="local-detination-item"><a href="">United States</a></li>
+                                <li class="local-detination-item"><a href="">United States</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="dropdown-regional-destinations">
+                            <div class="local-destination-btn-box region-box">
+                              <button class="btn local-destionation-btn btn-region">
+                                <span class="me-3"
+                                  ><img class="img-fluid" src="imgs/distance.svg" alt=""
+                                /></span>
+                                Regional
+                              </button>
+                              <ul class="local-dest-ul">
+                                <li class="local-detination-item"><a href="">Americas</a></li>
+                                <li class="local-detination-item"><a href="">Asia Pacific</a></li>
+                                <li class="local-detination-item"><a href="">Europe</a></li>
+                                <li class="local-detination-item"><a href="">Middle-East</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="dropdown-see-all-btn text-center mt-3 d-block d-lg-none">
+                            <button class="btn wander-btn-outlined">See all destinations</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-6 d-none d-lg-block">
+                        <div class="dropdown-middle-box">
+                          <div class="dropdown-country-filter-row">
+                            <ul class="country-filter-ul">
+                              <li class="country-filter-name">Country</li>
+                              <li class="country-filter-tag"><a href="">A-B</a></li>
+                              <li class="country-filter-tag"><a href="">C-E</a></li>
+                              <li class="country-filter-tag"><a href="">F-H</a></li>
+                              <li class="country-filter-tag"><a href="">I-Z</a></li>
+                            </ul>
+                          </div>
+                          <div class="dropdown-country-names-row">
+                            <ul class="dropdonw-country-names-ul">
+                              <li class="country-name-item">
+                                <a href=""
+                                  ><span class="dropdown-country-flag-icon"
+                                    ><img
+                                      src="imgs/country-flag-icon.svg"
+                                      alt=""
+                                      class="img-fluid" /></span
+                                  >United States</a
+                                >
+                              </li>
+                              <li class="country-name-item">
+                                <a href=""
+                                  ><span class="dropdown-country-flag-icon"
+                                    ><img
+                                      src="imgs/country-flag-icon.svg"
+                                      alt=""
+                                      class="img-fluid" /></span
+                                  >United Arab Emirates</a
+                                >
+                              </li>
+                              <li class="country-name-item">
+                                <a href=""
+                                  ><span class="dropdown-country-flag-icon"
+                                    ><img
+                                      src="imgs/country-flag-icon.svg"
+                                      alt=""
+                                      class="img-fluid" /></span
+                                  >Switzerlands</a
+                                >
+                              </li>
+                              <li class="country-name-item">
+                                <a href=""
+                                  ><span class="dropdown-country-flag-icon"
+                                    ><img
+                                      src="imgs/country-flag-icon.svg"
+                                      alt=""
+                                      class="img-fluid" /></span
+                                  >Singapore</a
+                                >
+                              </li>
+                              <li class="country-name-item">
+                                <a href=""
+                                  ><span class="dropdown-country-flag-icon"
+                                    ><img
+                                      src="imgs/country-flag-icon.svg"
+                                      alt=""
+                                      class="img-fluid" /></span
+                                  >Germany</a
+                                >
+                              </li>
+                              <li class="country-name-item">
+                                <a href=""
+                                  ><span class="dropdown-country-flag-icon"
+                                    ><img
+                                      src="imgs/country-flag-icon.svg"
+                                      alt=""
+                                      class="img-fluid" /></span
+                                  >Argentina</a
+                                >
+                              </li>
+                              <li class="country-name-item">
+                                <a href=""
+                                  ><span class="dropdown-country-flag-icon"
+                                    ><img
+                                      src="imgs/country-flag-icon.svg"
+                                      alt=""
+                                      class="img-fluid" /></span
+                                  >United States</a
+                                >
+                              </li>
+                              <li class="country-name-item">
+                                <a href=""
+                                  ><span class="dropdown-country-flag-icon"
+                                    ><img
+                                      src="imgs/country-flag-icon.svg"
+                                      alt=""
+                                      class="img-fluid" /></span
+                                  >United Arab Emirates</a
+                                >
+                              </li>
+                              <li class="country-name-item">
+                                <a href=""
+                                  ><span class="dropdown-country-flag-icon"
+                                    ><img
+                                      src="imgs/country-flag-icon.svg"
+                                      alt=""
+                                      class="img-fluid" /></span
+                                  >Switzerlands</a
+                                >
+                              </li>
+                              <li class="country-name-item">
+                                <a href=""
+                                  ><span class="dropdown-country-flag-icon"
+                                    ><img
+                                      src="imgs/country-flag-icon.svg"
+                                      alt=""
+                                      class="img-fluid" /></span
+                                  >Singapore</a
+                                >
+                              </li>
+                              <li class="country-name-item">
+                                <a href=""
+                                  ><span class="dropdown-country-flag-icon"
+                                    ><img
+                                      src="imgs/country-flag-icon.svg"
+                                      alt=""
+                                      class="img-fluid" /></span
+                                  >Germany</a
+                                >
+                              </li>
+                              <li class="country-name-item">
+                                <a href=""
+                                  ><span class="dropdown-country-flag-icon"
+                                    ><img
+                                      src="imgs/country-flag-icon.svg"
+                                      alt=""
+                                      class="img-fluid" /></span
+                                  >Argentina</a
+                                >
+                              </li>
+                              <li class="country-name-item">
+                                <a href=""
+                                  ><span class="dropdown-country-flag-icon"
+                                    ><img
+                                      src="imgs/country-flag-icon.svg"
+                                      alt=""
+                                      class="img-fluid" /></span
+                                  >United States</a
+                                >
+                              </li>
+                              <li class="country-name-item">
+                                <a href=""
+                                  ><span class="dropdown-country-flag-icon"
+                                    ><img
+                                      src="imgs/country-flag-icon.svg"
+                                      alt=""
+                                      class="img-fluid" /></span
+                                  >United Arab Emirates</a
+                                >
+                              </li>
+                              <li class="country-name-item">
+                                <a href=""
+                                  ><span class="dropdown-country-flag-icon"
+                                    ><img
+                                      src="imgs/country-flag-icon.svg"
+                                      alt=""
+                                      class="img-fluid" /></span
+                                  >Switzerlands</a
+                                >
+                              </li>
+                              <li class="country-name-item">
+                                <a href=""
+                                  ><span class="dropdown-country-flag-icon"
+                                    ><img
+                                      src="imgs/country-flag-icon.svg"
+                                      alt=""
+                                      class="img-fluid" /></span
+                                  >Singapore</a
+                                >
+                              </li>
+                              <li class="country-name-item">
+                                <a href=""
+                                  ><span class="dropdown-country-flag-icon"
+                                    ><img
+                                      src="imgs/country-flag-icon.svg"
+                                      alt=""
+                                      class="img-fluid" /></span
+                                  >Germany</a
+                                >
+                              </li>
+                              <li class="country-name-item">
+                                <a href=""
+                                  ><span class="dropdown-country-flag-icon"
+                                    ><img
+                                      src="imgs/country-flag-icon.svg"
+                                      alt=""
+                                      class="img-fluid" /></span
+                                  >Argentina</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+
+                          <div class="dropdown-see-all-btn text-center mt-5">
+                            <button class="btn wander-btn-outlined w-50">
+                              See all destinations
+                            </button>
+                          </div>
+                        </div>
+                        <div class="dropdown-middle-box-regional">
+                          <div class="dropdown-regional-heading">
+                            <span>Regions</span>
+                          </div>
+                          <div class="dropdown-regional-names-row">
+                            <ul class="dropdown-regional-maps-ul">
+                              <li class="regional-name-item">
+                                <a href=""
+                                  ><div
+                                    class="dropdown-regional-bg"
+                                    style="
+                                      background-image: url('imgs/Caucasus.svg');
+                                      background-size: contain;
+                                    "></div>
+                                  <span class="dropdown-regional-text"> Caucasus </span></a
+                                >
+                              </li>
+                              <li class="regional-name-item">
+                                <a href=""
+                                  ><div
+                                    class="dropdown-regional-bg"
+                                    style="
+                                      background-image: url('imgs/Oceania.svg');
+                                      background-size: cover;
+                                    ">
+                                    >
+                                  </div>
+                                  <span class="dropdown-regional-text"> Oceania </span></a
+                                >
+                              </li>
+                              <li class="regional-name-item">
+                                <a href=""
+                                  ><div
+                                    class="dropdown-regional-bg"
+                                    style="
+                                      background-image: url('imgs/Latin\ America.svg');
+                                      background-size: contain;
+                                    "></div>
+                                  <span class="dropdown-regional-text"> Latin America </span></a
+                                >
+                              </li>
+                              <li class="regional-name-item">
+                                <a href=""
+                                  ><div
+                                    class="dropdown-regional-bg"
+                                    style="
+                                      background-image: url('imgs/caribbean.svg');
+                                      background-size: cover;
+                                    "></div>
+                                  <span class="dropdown-regional-text"> Caribbean</span></a
+                                >
+                              </li>
+                              <li class="regional-name-item">
+                                <a href=""
+                                  ><div
+                                    class="dropdown-regional-bg"
+                                    style="
+                                      background-image: url('imgs/Asia\ p_1\ 1.svg');
+                                      background-size: cover;
+                                    "></div>
+                                  <span class="dropdown-regional-text"> Asia Pacific </span></a
+                                >
+                              </li>
+                              <li class="regional-name-item">
+                                <a href=""
+                                  ><div
+                                    class="dropdown-regional-bg"
+                                    style="
+                                      background-image: url('imgs/balkans.svg');
+                                      background-size: cover;
+                                    "></div>
+                                  <span class="dropdown-regional-text"> Balkans </span></a
+                                >
+                              </li>
+                              <li class="regional-name-item">
+                                <a href=""
+                                  ><div
+                                    class="dropdown-regional-bg"
+                                    style="
+                                      background-image: url('imgs/Europe.svg');
+                                      background-size: contain;
+                                    "></div>
+                                  <span class="dropdown-regional-text"> Europe </span></a
+                                >
+                              </li>
+                              <li class="regional-name-item">
+                                <a href=""
+                                  ><div
+                                    class="dropdown-regional-bg"
+                                    style="
+                                      background-image: url('imgs/middle-east.svg');
+                                      background-size: contain;
+                                    "></div>
+                                  <span class="dropdown-regional-text"> Middle East </span></a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-3 d-none d-lg-block">
+                        <div class="dropdown-right dropdown-right-feature">
+                          <ul class="dropdown-feature-ul">
+                            <li class="dropdown-feature-item">
+                              <div class="dropdown-feature-icon">
+                                <img class="img-fluid" src="imgs/lightning_stand.svg" alt="" />
+                              </div>
+                              <div class="dropdown-feature-title">Instant Activation</div>
+                            </li>
+                            <li class="dropdown-feature-item">
+                              <div class="dropdown-feature-icon">
+                                <img class="img-fluid" src="imgs/lightning_stand.svg" alt="" />
+                              </div>
+                              <div class="dropdown-feature-title">High Internet Speeds</div>
+                            </li>
+                            <li class="dropdown-feature-item">
+                              <div class="dropdown-feature-icon">
+                                <img class="img-fluid" src="imgs/lightning_stand.svg" alt="" />
+                              </div>
+                              <div class="dropdown-feature-title">Hotspot Sharing</div>
+                            </li>
+                            <li class="dropdown-feature-item">
+                              <div class="dropdown-feature-icon">
+                                <img class="img-fluid" src="imgs/lightning_stand.svg" alt="" />
+                              </div>
+                              <div class="dropdown-feature-title">No Hidden Charges</div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="dropdown-right-card dropdown-right">
+                          <div class="wander-destination-card-box">
+                            <div class="wander-destination-card position-relative">
+                              <div class="dest-card-corner-img position-absolute">
+                                <img src="imgs/flag.png" alt="" />
+                              </div>
+                              <div class="destination-card-img">
+                                <img src="imgs/unitedImg.png" alt="" />
+                              </div>
+                              <div class="destination-card-content">
+                                <div class="dest-card-heading">United States</div>
+                                <div
+                                  class="dest-card-specification d-flex justify-content-between align-items-end">
+                                  <div class="d-flex flex-column">
+                                    <span class="price-from-text">From</span>
+                                    <span class="dest-card-price">$30</span>
+                                  </div>
+                                  <div class="signal">
+                                    <img src="/imgs/signal.svg" alt="" />
+                                    <span class="network-type">5G</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="dest-card-button text-center">
+                                <button class="btn">Select Plan</button>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="mb-2 dropdown-right-feature-list">
+                              <span class="me-2"><img src="imgs/right-done.svg" alt="" /></span
+                              ><span>32 plan options available</span>
+                            </div>
+                            <div class="mb-2 dropdown-right-feature-list">
+                              <span class="me-2"><img src="imgs/right-done.svg" alt="" /></span
+                              ><span>5G and hotspot-enabled</span>
+                            </div>
+                            <div class="mb-2 dropdown-right-feature-list">
+                              <span class="me-2"><img src="imgs/right-done.svg" alt="" /></span
+                              ><span>Activation within 2 mins</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="dropdown-right-card-region dropdown-right">
+                          <div class="wander-destination-card-box">
+                            <div class="wander-destination-card">
+                              <div class="destination-card-img">
+                                <img src="imgs/unitedImg.png" alt="" />
+                              </div>
+                              <div class="destination-card-content">
+                                <div class="dest-card-heading">United States</div>
+                                <div
+                                  class="dest-card-specification d-flex justify-content-between align-items-end">
+                                  <div class="d-flex flex-column">
+                                    <span class="price-from-text">From</span>
+                                    <span class="dest-card-price">$30</span>
+                                  </div>
+                                  <div class="signal">
+                                    <img src="/imgs/signal.svg" alt="" />
+                                    <span class="network-type">5G</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="dest-card-button text-center">
+                                <button class="btn">Select Plan</button>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="mb-2 dropdown-right-feature-list">
+                              <span class="me-2"><img src="imgs/right-done.svg" alt="" /></span
+                              ><span>32 plan options available</span>
+                            </div>
+                            <div class="mb-2 dropdown-right-feature-list">
+                              <span class="me-2"><img src="imgs/right-done.svg" alt="" /></span
+                              ><span>5G and hotspot-enabled</span>
+                            </div>
+                            <div class="mb-2 dropdown-right-feature-list">
+                              <span class="me-2"><img src="imgs/right-done.svg" alt="" /></span
+                              ><span>Activation within 2 mins</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul> -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Our Story</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">How it workds</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link">FAQs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Contact Us</a>
+              </li>
+            </ul>
+
+            <div class="d-flex wander-header-right d-none d-lg-flex">
+              <select class="form-select wander-header-select" aria-label=".form-select-lg example">
+                <option selected>EN-USD($)</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <button class="header-search-btn btn">
+                <img src="imgs/search-black.svg" alt="" />
+              </button>
+              <button class="header-admin-btn btn">
+                <img src="imgs/admin-black.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="contact-form-section">
+      <div class="container-fluid">
+        <div class="faq-container">
+          <h1 class="top-heading">FAQs</h1>
+          <p>Browse through our frequently asked questions, tutorials, and other self-help resources to find the answers you need.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-details-section">
+      <div class="container-fluid">
+        <div class="row mt-5">
+          <div class="col-12 col-lg-12">
+            <div class="product-toggle-details-box text-center">
+              <div class="toggle-btn-outline">
+                <button class="btn product-toggle-btn active">All</button>
+                <button class="btn product-toggle-btn">General</button>
+                <button class="btn product-toggle-btn">Technical</button>
+              </div>
+              <div class="toggle-content-box tg-product-all">
+                <div class="accordion faq-accordian" id="accordionLeft">
+                  <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-4">
+                      <div class="faq-box">
+                        <div class="faq-inner-box">
+                          <div class="faq-acc-heading">
+                            <div class="faq-acc-head-icon">
+                              <svg viewBox="0 0 26 32" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.6042 0.271729H9.9375L0.469167 9.77173L0.4375 28.7717C0.4375 30.5134 1.8625 31.9384 3.60417 31.9384H22.6042C24.3458 31.9384 25.7708 30.5134 25.7708 28.7717V3.4384C25.7708 1.69673 24.3458 0.271729 22.6042 0.271729ZM14.6875 24.0217H11.5208V20.8551H14.6875V24.0217ZM14.6875 17.6884H11.5208V9.77173H14.6875V17.6884Z"/>
+                                </svg>
+                              </div>
+                              <p>About Wander eSIM</p>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1"> 
+                                <svg viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M23.4468 3.84717H9.70266C8.84498 3.84717 8.02242 4.18788 7.41594 4.79436C6.80946 5.40084 6.46875 6.22339 6.46875 7.08108V32.9524C6.46875 33.8101 6.80946 34.6326 7.41594 35.2391C8.02242 35.8456 8.84498 36.1863 9.70266 36.1863H29.1061C29.9638 36.1863 30.7864 35.8456 31.3929 35.2391C31.9993 34.6326 32.3401 33.8101 32.3401 32.9524V12.7404L23.4468 3.84717Z" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path d="M22.6406 3.84717V13.5489H32.3424" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path d="M25.8732 21.635H12.9375" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path d="M25.8732 28.1018H12.9375" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path d="M16.1714 15.1665H12.9375" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg><span>What is a Wander eSIM?</span></button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#accordionLeft">
+                              <div class="accordion-body">
+                                A Wander eSIM is a digital SIM card that lets you connect to local mobile networks while traveling without needing a physical SIM card. It's convenient, eliminates the hassle of swapping SIM cards, and always offers affordable rates.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                <svg viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M23.4468 3.84717H9.70266C8.84498 3.84717 8.02242 4.18788 7.41594 4.79436C6.80946 5.40084 6.46875 6.22339 6.46875 7.08108V32.9524C6.46875 33.8101 6.80946 34.6326 7.41594 35.2391C8.02242 35.8456 8.84498 36.1863 9.70266 36.1863H29.1061C29.9638 36.1863 30.7864 35.8456 31.3929 35.2391C31.9993 34.6326 32.3401 33.8101 32.3401 32.9524V12.7404L23.4468 3.84717Z" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path d="M22.6406 3.84717V13.5489H32.3424" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path d="M25.8732 21.635H12.9375" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path d="M25.8732 28.1018H12.9375" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path d="M16.1714 15.1665H12.9375" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg><span>How does a Wander eSIM work?</span></button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionLeft">
+                              <div class="accordion-body">
+                                A Wander eSIM is a digital SIM card that lets you connect to local mobile networks while traveling without needing a physical SIM card. It's convenient, eliminates the hassle of swapping SIM cards, and always offers affordable rates.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                <svg viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M23.4468 3.84717H9.70266C8.84498 3.84717 8.02242 4.18788 7.41594 4.79436C6.80946 5.40084 6.46875 6.22339 6.46875 7.08108V32.9524C6.46875 33.8101 6.80946 34.6326 7.41594 35.2391C8.02242 35.8456 8.84498 36.1863 9.70266 36.1863H29.1061C29.9638 36.1863 30.7864 35.8456 31.3929 35.2391C31.9993 34.6326 32.3401 33.8101 32.3401 32.9524V12.7404L23.4468 3.84717Z" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path d="M22.6406 3.84717V13.5489H32.3424" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path d="M25.8732 21.635H12.9375" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path d="M25.8732 28.1018H12.9375" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path d="M16.1714 15.1665H12.9375" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg><span>Which devices are compatible with Wander eSIM?</span></button>
+                            </h2>
+                            <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionLeft">
+                              <div class="accordion-body">
+                                A Wander eSIM is a digital SIM card that lets you connect to local mobile networks while traveling without needing a physical SIM card. It's convenient, eliminates the hassle of swapping SIM cards, and always offers affordable rates.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                <svg viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M23.4468 3.84717H9.70266C8.84498 3.84717 8.02242 4.18788 7.41594 4.79436C6.80946 5.40084 6.46875 6.22339 6.46875 7.08108V32.9524C6.46875 33.8101 6.80946 34.6326 7.41594 35.2391C8.02242 35.8456 8.84498 36.1863 9.70266 36.1863H29.1061C29.9638 36.1863 30.7864 35.8456 31.3929 35.2391C31.9993 34.6326 32.3401 33.8101 32.3401 32.9524V12.7404L23.4468 3.84717Z" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path d="M22.6406 3.84717V13.5489H32.3424" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path d="M25.8732 21.635H12.9375" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path d="M25.8732 28.1018H12.9375" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path d="M16.1714 15.1665H12.9375" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg><span>How does Wander eSIM compare to traditional roaming options?</span></button>
+                            </h2>
+                            <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionLeft">
+                              <div class="accordion-body">
+                                A Wander eSIM is a digital SIM card that lets you connect to local mobile networks while traveling without needing a physical SIM card. It's convenient, eliminates the hassle of swapping SIM cards, and always offers affordable rates.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                      <div class="faq-box">
+                        <div class="faq-acc-heading">
+                          <div class="faq-acc-head-icon">
+                            <svg viewBox="0 0 30 33" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M26.9805 3.16455L24.6055 0.789551L22.2305 3.16455L19.8555 0.789551L17.4805 3.16455L15.1055 0.789551L12.7305 3.16455L10.3555 0.789551L7.98047 3.16455L5.60547 0.789551V22.9562H0.855469V27.7062C0.855469 30.3345 2.97714 32.4562 5.60547 32.4562H24.6055C27.2338 32.4562 29.3555 30.3345 29.3555 27.7062V0.789551L26.9805 3.16455ZM26.1888 27.7062C26.1888 28.577 25.4763 29.2895 24.6055 29.2895C23.7346 29.2895 23.0221 28.577 23.0221 27.7062V22.9562H8.77214V5.53955H26.1888V27.7062Z"/>
+                              <path d="M19.8555 8.7063H10.3555V11.873H19.8555V8.7063Z"/>
+                              <path d="M24.6042 8.70605H21.4375V11.8727H24.6042V8.70605Z"/>
+                              <path d="M19.8555 13.4563H10.3555V16.623H19.8555V13.4563Z"/>
+                              <path d="M24.6042 13.4561H21.4375V16.6227H24.6042V13.4561Z"/>
+                            </svg>
+                          </div>
+                          <p>Purchasing and Activation</p>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5"> 
+                              <svg viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.4468 3.84717H9.70266C8.84498 3.84717 8.02242 4.18788 7.41594 4.79436C6.80946 5.40084 6.46875 6.22339 6.46875 7.08108V32.9524C6.46875 33.8101 6.80946 34.6326 7.41594 35.2391C8.02242 35.8456 8.84498 36.1863 9.70266 36.1863H29.1061C29.9638 36.1863 30.7864 35.8456 31.3929 35.2391C31.9993 34.6326 32.3401 33.8101 32.3401 32.9524V12.7404L23.4468 3.84717Z" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22.6406 3.84717V13.5489H32.3424" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M25.8732 21.635H12.9375" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M25.8732 28.1018H12.9375" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16.1714 15.1665H12.9375" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg><span>How do I purchase a Wander eSIM?</span></button>
+                          </h2>
+                          <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionLeft">
+                            <div class="accordion-body">
+                              A Wander eSIM is a digital SIM card that lets you connect to local mobile networks while traveling without needing a physical SIM card. It's convenient, eliminates the hassle of swapping SIM cards, and always offers affordable rates.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                              <svg viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.4468 3.84717H9.70266C8.84498 3.84717 8.02242 4.18788 7.41594 4.79436C6.80946 5.40084 6.46875 6.22339 6.46875 7.08108V32.9524C6.46875 33.8101 6.80946 34.6326 7.41594 35.2391C8.02242 35.8456 8.84498 36.1863 9.70266 36.1863H29.1061C29.9638 36.1863 30.7864 35.8456 31.3929 35.2391C31.9993 34.6326 32.3401 33.8101 32.3401 32.9524V12.7404L23.4468 3.84717Z" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22.6406 3.84717V13.5489H32.3424" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M25.8732 21.635H12.9375" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M25.8732 28.1018H12.9375" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16.1714 15.1665H12.9375" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg><span>Can you buy an eSIM in advance, and activate it later?</span></button>
+                          </h2>
+                          <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionLeft">
+                            <div class="accordion-body">
+                              A Wander eSIM is a digital SIM card that lets you connect to local mobile networks while traveling without needing a physical SIM card. It's convenient, eliminates the hassle of swapping SIM cards, and always offers affordable rates.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                              <svg viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.4468 3.84717H9.70266C8.84498 3.84717 8.02242 4.18788 7.41594 4.79436C6.80946 5.40084 6.46875 6.22339 6.46875 7.08108V32.9524C6.46875 33.8101 6.80946 34.6326 7.41594 35.2391C8.02242 35.8456 8.84498 36.1863 9.70266 36.1863H29.1061C29.9638 36.1863 30.7864 35.8456 31.3929 35.2391C31.9993 34.6326 32.3401 33.8101 32.3401 32.9524V12.7404L23.4468 3.84717Z" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22.6406 3.84717V13.5489H32.3424" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M25.8732 21.635H12.9375" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M25.8732 28.1018H12.9375" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16.1714 15.1665H12.9375" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg><span>How long does it take for a new eSIM to activate?</span></button>
+                          </h2>
+                          <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#accordionLeft">
+                            <div class="accordion-body">
+                              A Wander eSIM is a digital SIM card that lets you connect to local mobile networks while traveling without needing a physical SIM card. It's convenient, eliminates the hassle of swapping SIM cards, and always offers affordable rates.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                              <svg viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.4468 3.84717H9.70266C8.84498 3.84717 8.02242 4.18788 7.41594 4.79436C6.80946 5.40084 6.46875 6.22339 6.46875 7.08108V32.9524C6.46875 33.8101 6.80946 34.6326 7.41594 35.2391C8.02242 35.8456 8.84498 36.1863 9.70266 36.1863H29.1061C29.9638 36.1863 30.7864 35.8456 31.3929 35.2391C31.9993 34.6326 32.3401 33.8101 32.3401 32.9524V12.7404L23.4468 3.84717Z" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22.6406 3.84717V13.5489H32.3424" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M25.8732 21.635H12.9375" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M25.8732 28.1018H12.9375" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16.1714 15.1665H12.9375" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg><span>How do I activate my Wander eSIM?</span></button>
+                          </h2>
+                          <div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#accordionLeft">
+                            <div class="accordion-body">
+                              A Wander eSIM is a digital SIM card that lets you connect to local mobile networks while traveling without needing a physical SIM card. It's convenient, eliminates the hassle of swapping SIM cards, and always offers affordable rates.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                              <svg viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.4468 3.84717H9.70266C8.84498 3.84717 8.02242 4.18788 7.41594 4.79436C6.80946 5.40084 6.46875 6.22339 6.46875 7.08108V32.9524C6.46875 33.8101 6.80946 34.6326 7.41594 35.2391C8.02242 35.8456 8.84498 36.1863 9.70266 36.1863H29.1061C29.9638 36.1863 30.7864 35.8456 31.3929 35.2391C31.9993 34.6326 32.3401 33.8101 32.3401 32.9524V12.7404L23.4468 3.84717Z" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22.6406 3.84717V13.5489H32.3424" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M25.8732 21.635H12.9375" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M25.8732 28.1018H12.9375" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16.1714 15.1665H12.9375" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg><span>Do I need to be connected to the internet to activate or use my Wander eSIM?</span></button>
+                          </h2>
+                          <div id="collapse9" class="accordion-collapse collapse" data-bs-parent="#accordionLeft">
+                            <div class="accordion-body">
+                              A Wander eSIM is a digital SIM card that lets you connect to local mobile networks while traveling without needing a physical SIM card. It's convenient, eliminates the hassle of swapping SIM cards, and always offers affordable rates.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                      <div class="faq-box">
+                      <div class="faq-acc-heading">
+                        <div class="faq-acc-head-icon">
+                          <svg viewBox="0 0 39 37" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M29.0666 21.2727L26.8069 19.013C27.4833 18.2136 27.998 17.3294 28.3509 16.3604C28.7051 15.3925 28.8822 14.4013 28.8822 13.3868C28.8822 12.28 28.6516 11.1578 28.1904 10.0203C27.7293 8.88273 27.0375 7.8528 26.1152 6.93047L28.3288 4.71688C29.5278 5.9159 30.4427 7.26865 31.0736 8.77513C31.7033 10.2816 32.0181 11.8188 32.0181 13.3868C32.0181 14.801 31.7721 16.1765 31.2802 17.5133C30.7883 18.8513 30.0505 20.1044 29.0666 21.2727ZM23.5788 15.7848L17.2608 9.46687C17.599 9.25166 17.9753 9.08257 18.3897 8.95959C18.8054 8.83662 19.2284 8.77513 19.6589 8.77513C20.9501 8.77513 22.0416 9.22092 22.9331 10.1125C23.8247 11.0041 24.2705 12.0955 24.2705 13.3868C24.2705 13.8172 24.209 14.2322 24.0861 14.6319C23.9631 15.0316 23.794 15.4159 23.5788 15.7848ZM33.4938 25.6538L31.2802 23.4402C32.5407 21.9952 33.4705 20.4039 34.0694 18.6662C34.6695 16.9298 34.9695 15.1699 34.9695 13.3868C34.9695 11.4499 34.6006 9.52037 33.8628 7.59823C33.1249 5.67733 32.0181 3.97901 30.5424 2.50328L32.756 0.289691C34.5084 2.13435 35.8384 4.17885 36.746 6.42319C37.6523 8.66752 38.1055 10.9887 38.1055 13.3868C38.1055 15.6311 37.7365 17.7906 36.9987 19.8652C36.2608 21.9411 35.0925 23.8706 33.4938 25.6538ZM34.0011 36.6295L21.5035 24.1319V33.678H17.8142V20.4426L10.4356 13.1101V13.3868C10.4356 14.4936 10.6661 15.6157 11.1273 16.7533C11.5885 17.8908 12.2802 18.9208 13.2026 19.8431L10.989 22.0567C9.78994 20.8577 8.87498 19.5049 8.24411 17.9984C7.61446 16.492 7.29964 14.9547 7.29964 13.3868C7.29964 12.8641 7.33039 12.3568 7.39188 11.8649C7.45336 11.373 7.56097 10.8657 7.71469 10.3431L5.36275 7.99115C5.02456 8.88273 4.77123 9.7817 4.60275 10.688C4.43304 11.5956 4.34819 12.4952 4.34819 13.3868C4.34819 15.3237 4.71712 17.2526 5.45498 19.1735C6.19285 21.0956 7.29964 22.7945 8.77537 24.2703L6.56178 26.4839C4.80935 24.6392 3.47935 22.5947 2.57178 20.3504C1.66544 18.106 1.21226 15.7848 1.21226 13.3868C1.21226 12.034 1.35799 10.704 1.64945 9.39678C1.94214 8.09076 2.38055 6.82286 2.96469 5.59309L0.105469 2.73387L2.68799 0.105225L36.6297 34.047L34.0011 36.6295Z"/>
+                            </svg>
+                          </div>
+                          <p>Using Your Wander eSIM</p>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10"> 
+                            <svg viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M23.4468 3.84717H9.70266C8.84498 3.84717 8.02242 4.18788 7.41594 4.79436C6.80946 5.40084 6.46875 6.22339 6.46875 7.08108V32.9524C6.46875 33.8101 6.80946 34.6326 7.41594 35.2391C8.02242 35.8456 8.84498 36.1863 9.70266 36.1863H29.1061C29.9638 36.1863 30.7864 35.8456 31.3929 35.2391C31.9993 34.6326 32.3401 33.8101 32.3401 32.9524V12.7404L23.4468 3.84717Z" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M22.6406 3.84717V13.5489H32.3424" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M25.8732 21.635H12.9375" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M25.8732 28.1018H12.9375" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M16.1714 15.1665H12.9375" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg><span>Can I use my existing phone number with a Wander eSIM?</span></button>
+                        </h2>
+                        <div id="collapse10" class="accordion-collapse collapse" data-bs-parent="#accordionLeft">
+                          <div class="accordion-body">
+                            A Wander eSIM is a digital SIM card that lets you connect to local mobile networks while traveling without needing a physical SIM card. It's convenient, eliminates the hassle of swapping SIM cards, and always offers affordable rates.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                            <svg viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M23.4468 3.84717H9.70266C8.84498 3.84717 8.02242 4.18788 7.41594 4.79436C6.80946 5.40084 6.46875 6.22339 6.46875 7.08108V32.9524C6.46875 33.8101 6.80946 34.6326 7.41594 35.2391C8.02242 35.8456 8.84498 36.1863 9.70266 36.1863H29.1061C29.9638 36.1863 30.7864 35.8456 31.3929 35.2391C31.9993 34.6326 32.3401 33.8101 32.3401 32.9524V12.7404L23.4468 3.84717Z" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M22.6406 3.84717V13.5489H32.3424" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M25.8732 21.635H12.9375" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M25.8732 28.1018H12.9375" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M16.1714 15.1665H12.9375" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg><span>Can I use a Wander eSIM if my phone is locked to a specific carrier?</span></button>
+                        </h2>
+                        <div id="collapse11" class="accordion-collapse collapse" data-bs-parent="#accordionLeft">
+                          <div class="accordion-body">
+                            A Wander eSIM is a digital SIM card that lets you connect to local mobile networks while traveling without needing a physical SIM card. It's convenient, eliminates the hassle of swapping SIM cards, and always offers affordable rates.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                            <svg viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M23.4468 3.84717H9.70266C8.84498 3.84717 8.02242 4.18788 7.41594 4.79436C6.80946 5.40084 6.46875 6.22339 6.46875 7.08108V32.9524C6.46875 33.8101 6.80946 34.6326 7.41594 35.2391C8.02242 35.8456 8.84498 36.1863 9.70266 36.1863H29.1061C29.9638 36.1863 30.7864 35.8456 31.3929 35.2391C31.9993 34.6326 32.3401 33.8101 32.3401 32.9524V12.7404L23.4468 3.84717Z" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M22.6406 3.84717V13.5489H32.3424" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M25.8732 21.635H12.9375" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M25.8732 28.1018H12.9375" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M16.1714 15.1665H12.9375" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg><span>How do I switch between my Wander eSIM and my regular SIM card?</span></button>
+                        </h2>
+                        <div id="collapse12" class="accordion-collapse collapse" data-bs-parent="#accordionLeft">
+                          <div class="accordion-body">
+                            A Wander eSIM is a digital SIM card that lets you connect to local mobile networks while traveling without needing a physical SIM card. It's convenient, eliminates the hassle of swapping SIM cards, and always offers affordable rates.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                            <svg viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M23.4468 3.84717H9.70266C8.84498 3.84717 8.02242 4.18788 7.41594 4.79436C6.80946 5.40084 6.46875 6.22339 6.46875 7.08108V32.9524C6.46875 33.8101 6.80946 34.6326 7.41594 35.2391C8.02242 35.8456 8.84498 36.1863 9.70266 36.1863H29.1061C29.9638 36.1863 30.7864 35.8456 31.3929 35.2391C31.9993 34.6326 32.3401 33.8101 32.3401 32.9524V12.7404L23.4468 3.84717Z" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M22.6406 3.84717V13.5489H32.3424" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M25.8732 21.635H12.9375" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M25.8732 28.1018H12.9375" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M16.1714 15.1665H12.9375" stroke="#060619" stroke-opacity="0.6" stroke-width="3.8807" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg><span>Can I use a Wander eSIM for international roaming?</span></button>
+                        </h2>
+                        <div id="collapse13" class="accordion-collapse collapse" data-bs-parent="#accordionLeft">
+                          <div class="accordion-body">
+                            A Wander eSIM is a digital SIM card that lets you connect to local mobile networks while traveling without needing a physical SIM card. It's convenient, eliminates the hassle of swapping SIM cards, and always offers affordable rates.
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="toggle-content-box tg-product-general">
+                
+              </div>
+              <div class="toggle-content-box tg-product-technical">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <!-- <footer class="wander-footer">
+      <div class="container-fluid">
+        <div class="wander-footer-content-box">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 order-2 order-md-1">
+              <div class="footer-left">
+                <div class="footer-logo">
+                  <h3 class="wander-footer-text-logo">
+                    Wander<span class="footer-logo-subText">with us,</span>
+                  </h3>
+
+                  <p class="footer-below-logo-text">
+                    <span class="footer-logo-subText-mobile">with us,</span>Connect with the world
+                  </p>
+                </div>
+                <div class="footer-social">
+                  <div class="social-icon">
+                    <img src="imgs/social-mail.svg" alt="" />
+                  </div>
+                  <div class="social-icon">
+                    <img src="imgs/social-insta.svg" alt="" />
+                  </div>
+                  <div class="social-icon">
+                    <img src="imgs/social-fb.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5 order-1 order-md-2">
+              <div class="footer-middle">
+                <div class="wander-footer-links-box">
+                  <ul>
+                    <li class="link-group-head">Wander eSims</li>
+                    <li class="footer-link-list-item">
+                      <a class="footer-link" href="">About us</a>
+                    </li>
+                    <li class="footer-link-list-item">
+                      <a class="footer-link" href="">How it Works</a>
+                    </li>
+                    <li class="footer-link-list-item">
+                      <a class="footer-link" href="">Browse Plans</a>
+                    </li>
+                    <li class="footer-link-list-item"><a class="footer-link" href="">Blog</a></li>
+                  </ul>
+                  <ul>
+                    <li class="link-group-head">Top Destinations</li>
+                    <li class="footer-link-list-item">
+                      <a class="footer-link" href="">United States</a>
+                    </li>
+                    <li class="footer-link-list-item">
+                      <a class="footer-link" href="">United Kingdom</a>
+                    </li>
+                    <li class="footer-link-list-item">
+                      <a class="footer-link" href="">Singapore</a>
+                    </li>
+                    <li class="footer-link-list-item">
+                      <a class="footer-link" href="">Australia</a>
+                    </li>
+                    <li class="footer-link-list-item">
+                      <a class="footer-link" href="">Thailand</a>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li class="link-group-head">More Info</li>
+                    <li class="footer-link-list-item"><a class="footer-link" href="">FAQs</a></li>
+                    <li class="footer-link-list-item">
+                      <a class="footer-link" href="">Contact Us</a>
+                    </li>
+                    <li class="footer-link-list-item">
+                      <a class="footer-link" href="">Referrals</a>
+                    </li>
+                    <li class="footer-link-list-item">
+                      <a class="footer-link" href="">Partner with Us</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-copyright d-none d-md-block">
+                  Made with <span><img class="img-fluid" src="imgs/heart.svg" alt="" /></span> from
+                  Singapore.
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 order-3 order-md-3">
+              <div class="footer-right">
+                <div class="footer-wander-logo d-none d-md-block">
+                  <img src="imgs/wander-logo.svg" alt="" class="img-fluid" />
+                </div>
+                <div class="footer-imp-links">
+                  <div class="footer-copyright d-block d-md-none">
+                    Made with
+                    <span><img class="img-fluid" src="imgs/heart.svg" alt="" /></span> from
+                    Singapore.
+                  </div>
+                  <ul>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Terms of Service</a></li>
+                    <li>@2024-Wander</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wander-footer-bg">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="2834"
+          height="1196"
+          viewBox="0 0 2834 1196"
+          fill="none">
+          <path d="M-10.5 520.5H2823.5V1262.5H-10.5V520.5Z" fill="url(#paint0_linear_1_87196)" />
+          <path
+            d="M1807 343C1530.5 343 512.5 2.66619 -34 29.4995L-122 520.5H2913C2891.5 298.5 2886.3 0 2867.5 0C2261.9 0 2083.5 343 1807 343Z"
+            fill="url(#paint1_linear_1_87196)" />
+          <defs>
+            <linearGradient
+              id="paint0_linear_1_87196"
+              x1="-487.592"
+              y1="-208.324"
+              x2="1987.84"
+              y2="1605.95"
+              gradientUnits="userSpaceOnUse">
+              <stop stop-color="#FF9500" />
+              <stop offset="0.374287" stop-color="#F9DAAD" />
+              <stop offset="1" stop-color="white" />
+            </linearGradient>
+            <linearGradient
+              id="paint1_linear_1_87196"
+              x1="-487.592"
+              y1="-208.324"
+              x2="1987.84"
+              y2="1605.95"
+              gradientUnits="userSpaceOnUse">
+              <stop stop-color="#FF9500" />
+              <stop offset="0.374287" stop-color="#F9DAAD" />
+              <stop offset="1" stop-color="white" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+    </footer> -->
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="script.js"></script>
+  </body>
+</html>

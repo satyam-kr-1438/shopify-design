@@ -315,4 +315,36 @@ $(document).ready(function () {
   $(".accordion-item").on("hide.bs.collapse", function () {
     $(this).removeClass("open");
   });
+
+  // mobile list modal js
+
+  $(".modal-iphone-btn").addClass("active");
+  $(".mobile-list").show();
+  $(".modal-android-category").hide();
+
+  // Handle iPhone button click
+  $(".modal-iphone-btn").click(function () {
+    $(this).addClass("active");
+    $(".modal-android-btn").removeClass("active");
+    $(".modal-android-category").hide();
+    $(".mobile-list").show();
+
+    // Reset Android category state
+    $(".modal-android-category li").removeClass("active").show();
+  });
+
+  // Handle Android button click
+  $(".modal-android-btn").click(function () {
+    $(this).addClass("active");
+    $(".modal-iphone-btn").removeClass("active");
+    $(".modal-android-category").show();
+    $(".mobile-list").hide();
+  });
+
+  // Handle Android category item click
+  $(".modal-android-category li").click(function () {
+    $(".modal-android-category li").hide();
+    $(this).show().addClass("active");
+    $(".mobile-list").show();
+  });
 });
