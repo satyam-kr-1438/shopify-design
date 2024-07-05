@@ -106,44 +106,6 @@ $(document).ready(function () {
   });
 });
 
-$(document).ready(function () {
-  $(".wander-feature-slider").slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    dots: false,
-    focusOnSelect: true,
-    infinite: true,
-    nextArrow: ".wander-feature-next",
-    prevArrow: ".wander-feature-prev",
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false,
-        },
-      },
-      {
-        breakpoint: 748,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 580,
-        settings: {
-          dots: true,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  });
-});
-
 // let mm = gsap.matchMedia();
 
 // mm.add("(min-width:1024px)", () => {
@@ -346,5 +308,100 @@ $(document).ready(function () {
     $(".modal-android-category li").hide();
     $(this).show().addClass("active");
     $(".mobile-list").show();
+  });
+
+  // blog slider 01
+  $(".blog-slider").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: true,
+    focusOnSelect: true,
+    infinite: true,
+    nextArrow: ".blog-next",
+    prevArrow: ".blog-prev",
+    responsive: [
+      {
+        breakpoint: 1300,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+        },
+      },
+      // {
+      //   breakpoint: 480,
+      //   settings: {
+      //     slidesToShow: 3,
+      //     slidesToScroll: 1,
+      //     variableWidth: false,
+      //   },
+      // },
+    ],
+  });
+
+  // blog slider 2
+
+  $(".blog-slider2").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: true,
+    focusOnSelect: true,
+    infinite: true,
+    nextArrow: ".blog-next2",
+    prevArrow: ".blog-prev2",
+    responsive: [
+      {
+        breakpoint: 1300,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+        },
+      },
+      // {
+      //   breakpoint: 480,
+      //   settings: {
+      //     slidesToShow: 3,
+      //     slidesToScroll: 1,
+      //     variableWidth: false,
+      //   },
+      // },
+    ],
   });
 });
