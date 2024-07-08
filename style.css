@@ -2021,9 +2021,8 @@ footer .container-fluid {
   text-align: center;
   padding: 40px 20px;
   border-radius: 20px;
-  background: linear-gradient(to right, #ffe59d, #b2ebf2);
+  background: linear-gradient(284.17deg, #75e8de -31.15%, #cbf3f0 29.46%, #fdd77f 105.04%);
   width: 100%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .top-heading {
   font-size: 3rem;
@@ -2031,10 +2030,14 @@ footer .container-fluid {
   color: #252525;
 }
 .faq-container p {
-  font-size: 1.2rem;
-  color: #252525;
+  color: rgba(37, 37, 37, 0.6);
+  text-align: center;
+  font-family: Helvetica-font;
+  font-size: 16px;
+  font-weight: 400;
   max-width: 680px;
   margin: 0 auto;
+  margin-top: 1rem;
 }
 .product-details-section .toggle-btn-outline {
   gap: 0.6rem;
@@ -2296,4 +2299,119 @@ footer .container-fluid {
     gap: 0.6rem;
     border-radius: 18px;
   }
+}
+
+.faq-page {
+  padding: 3rem 0;
+}
+
+.faq-banner-section {
+  padding-top: 10rem;
+}
+
+/*Blog inner page*/
+.blogInner-section {
+  padding: 10rem 6rem 0 6rem;
+}
+.top-back-btn {
+  display: flex;
+  align-items: center;
+}
+.top-back-btn {
+  font-size: 14px;
+  color: #252525;
+  text-decoration: underline;
+  margin: 0 0 15px 0;
+}
+.top-back-btn span {
+  content: " ";
+  border-bottom: 1px solid rgba(6, 6, 25, 0.6);
+  border-right: 1px solid rgba(6, 6, 25, 0.6);
+  transform: rotate(135deg);
+  width: 8px;
+  height: 8px;
+  margin: 2px 5px 0 0;
+}
+.blog-heading {
+  font-size: 40px;
+  color: #252525;
+  margin: 12px 0 30px 0;
+  display: block;
+}
+.blog-heading span {
+  display: block;
+}
+.blog-top-subhead {
+  font-size: 18px;
+  color: #252525;
+  margin: 0 0 30px 0;
+}
+.top-btn a {
+  display: inline-block;
+  border: 1px solid #252525;
+  border-radius: 10px;
+  padding: 6px 20px;
+  font-size: 14px;
+  background: #fff;
+  color: #252525;
+  text-decoration: none;
+}
+.blog-profile {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.blog-profile img {
+  min-width: 40px;
+  max-width: 40px;
+  border-radius: 100%;
+  min-height: 40px;
+  max-height: 40px;
+}
+.blog-profile-name {
+  font-size: 18px;
+  margin: 0 15px 0 0;
+}
+.update-text {
+  font-size: 18px;
+  color: #252525;
+}
+.update-date,
+.update-share {
+  font-size: 18px;
+  color: #252525;
+}
+.profile-border {
+  border-bottom: 1px solid #ccc;
+  padding: 15px 25px 15px 0;
+}
+.profile-border:last-child {
+  border-bottom: none;
+}
+.share-icons {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 0;
+  margin: 10px 0 0 0;
+  gap: 10px;
+}
+.share-icons li a {
+  border: 1px solid #000;
+  display: flex;
+  min-width: 50px;
+  max-width: 50px;
+  min-height: 50px;
+  max-height: 50px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  padding: 15px;
+}
+.blog-plans {
+  background: #f5f5f5;
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 30px;
 }
